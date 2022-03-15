@@ -558,6 +558,13 @@ Start Hero SEction
   color: #1e1e1e;
 }
 @media (max-width: 991px) {
+  .hero-section .hero-slider-bg .hero-wrapper .hero-silder-text .hero-slider-btn {
+    max-width: 200px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+@media (max-width: 991px) {
   .hero-section .hero-slider-bg .hero-wrapper .hero-silder-text {
     max-width: 550px;
     margin: auto;

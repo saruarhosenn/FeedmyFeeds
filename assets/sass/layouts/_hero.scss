@@ -32,6 +32,13 @@ Start Hero SEction
         .hero-slider2-btn:hover {
           color: $secondary-color;
         }
+        @media (max-width: 991px) {
+          .hero-slider-btn {
+            max-width: 200px;
+            padding-left: 30px;
+            padding-right: 30px;
+          }
+        }
       }
       @media (max-width: 991px) {
         .hero-silder-text {

@@ -16,7 +16,7 @@
   $(".menu-hide-btn").click(function () {
     $(".menu-area").removeClass("show-menu");
   });
- 
+
   /* ====== MOBILE DROPDOWN MENU ====== */
   $(".menu-link").click(function () {
     $(".sub-menu").toggle();
@@ -63,5 +63,34 @@
       $(this).text("Show more plans");
     }
   });
-  
+
+  /* ============ HERO TYPING TRXT ============= */
+  new TypeIt("#heading1", {
+    strings: "Start to <span>Automate</span> <br /> our ads.",
+    speed: 50,
+    waitUntilVisible: true,
+  }).go();
+
+  new TypeIt("#desc1", {
+    strings:
+      "Tool for agencies and brands to improve their creatives from their catalog of products and services for dynamic ads.",
+    speed: 50,
+    waitUntilVisible: true,
+    startDelay: 2500,
+  }).go();
+
+  new TypeIt("#heading2", {
+    strings: "hello <span>Automate</span> <br /> our ads.",
+    speed: 50,
+    waitUntilVisible: true,
+    startDelay: 10500,
+  }).go();
+
+  new TypeIt("#desc2", {
+    strings:
+      "Tool for agencies and brands to improve their creatives from their catalog of products and services for dynamic ads.",
+    speed: 50,
+    waitUntilVisible: true,
+    startDelay: 12000,
+  }).go();
 })(jQuery);
