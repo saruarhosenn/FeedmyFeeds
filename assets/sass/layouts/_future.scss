@@ -1,0 +1,31 @@
+@import "../base/variables";
+
+/* 
+====================================================
+Start Future SEction
+====================================================
+*/
+.future-section {
+  background: no-repeat top / cover;
+  .future-video-wrapper {
+    .future-cover-video {
+      .future-video {
+        top: 22%;
+        width: 88% !important;
+      }
+    }
+  }
+  .future-text {
+    max-width: 469px;
+  }
+  @media (max-width: 991px) {
+    .future-text {
+      max-width: 100%;
+    }
+  }
+}
+/* 
+====================================================
+End Future SEction
+====================================================
+*/

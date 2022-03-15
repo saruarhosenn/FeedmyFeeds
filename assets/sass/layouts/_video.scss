@@ -1,0 +1,109 @@
+@import "../base/variables";
+
+/* 
+====================================================
+Editor &Editor SEction
+====================================================
+*/
+.video-wrapper {
+  position: relative;
+  .video-screen {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    width: 85% !important;
+    height: 85% !important;
+    -webkit-transform: translate(-50%, -40%);
+    -ms-transform: translate(-50%, -40%);
+    transform: translate(-50%, -40%);
+  }
+  .cover-video {
+    .video {
+      opacity: 0;
+      -webkit-transition: 1s;
+      -o-transition: 1s;
+      transition: 1s;
+      position: absolute;
+      top: 20%;
+      left: 50%;
+      width: 70% !important;
+      height: 80% !important;
+      -webkit-transform: translate(-50%, -20%);
+      -ms-transform: translate(-50%, -20%);
+      transform: translate(-50%, -20%);
+      z-index: -1;
+    }
+  }
+  .video-play {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -45%);
+    -webkit-transform: translate(-50%, -45%);
+    -moz-transform: translate(-50%, -45%);
+    -ms-transform: translate(-50%, -45%);
+    -o-transform: translate(-50%, -45%);
+    z-index: 1;
+    .video-play-btn {
+      width: 53px;
+      height: 53px;
+      display: inline-block;
+      background: linear-gradient(180deg, #4982c3 0%, #49bac4 100%);
+      border-radius: 50%;
+      &::before {
+        content: "";
+        width: 60px;
+        height: 60px;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        background: linear-gradient(#4982c3 100%, #49bac4 100%);
+        border-radius: 50%;
+        -webkit-animation: play__btn 1.6s ease-out infinite;
+        animation: play__btn 1.6s ease-out infinite;
+        @keyframes play__btn {
+          0%,
+          30% {
+            transform: scale(0);
+            opacity: 1;
+          }
+          50% {
+            transform: scale(1.5);
+            opacity: 0.7;
+          }
+          100% {
+            transform: scale(2);
+            opacity: 0;
+          }
+        }
+        @keyframes play__btn {
+          0%,
+          30% {
+            transform: scale(0);
+            opacity: 1;
+          }
+          50% {
+            transform: scale(1.5);
+            opacity: 0.7;
+          }
+          100% {
+            transform: scale(2);
+            opacity: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  .video-play .video-play-btn {
+    font-size: 15px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+  }
+}

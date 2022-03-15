@@ -1,0 +1,32 @@
+@import "../base/variables";
+@import "./video";
+
+/* 
+====================================================
+Start Editor SEction
+====================================================
+*/
+.editor-section {
+  background: no-repeat center / cover;
+  .editor-video-wrapper {
+    .editor-cover-video {
+      .editor-video {
+        top: 15%;
+      }
+    }
+  }
+  .editor-text {
+    max-width: 469px;
+  }
+  @media (max-width: 767px) {
+    .editor-text {
+      max-width: 100%;
+      margin-bottom: 15px;
+    }
+  }
+}
+/* 
+====================================================
+End Editor SEction
+====================================================
+*/

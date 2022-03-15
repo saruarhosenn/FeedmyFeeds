@@ -1,0 +1,93 @@
+@import "../base/variables";
+
+/* 
+====================================================
+Start Questions Section
+====================================================
+*/
+.questions-wrapper {
+  max-width: 1110px;
+  .faq-left-text {
+    max-width: 445px;
+  }
+  .faq-accordion-item {
+    border-bottom: 1px solid #9a9a9a;
+    .faq-accordion-btn {
+      position: relative;
+      width: 100%;
+      padding: 25px 0;
+      .faq-accordion-title {
+        width: 80%;
+      }
+      .faq-icon {
+        position: absolute;
+        top: 50%;
+        right: 0;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+        width: 24px;
+        height: 24px;
+        border: 1px solid #000000;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        &::before,
+        &::after {
+          display: block;
+          position: absolute;
+          content: "";
+          background: #000000;
+        }
+
+        &::before {
+          top: 10px;
+          left: 6px;
+          width: 10px;
+          height: 2px;
+        }
+
+        &::after {
+          top: 6px;
+          left: 10px;
+          width: 2px;
+          height: 10px;
+        }
+      }
+    }
+    button[aria-expanded="true"] {
+      .faq-icon::after {
+        width: 0;
+      }
+    }
+    button[aria-expanded="true"] + {
+      .faq-accordion-content {
+        opacity: 1;
+        max-height: 200px;
+        -webkit-transition: all 400ms linear;
+        -o-transition: all 400ms linear;
+        transition: all 400ms linear;
+        will-change: opacity, max-height;
+      }
+    }
+  }
+  .faq-accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    -webkit-transition: opacity 400ms linear, max-height 400ms linear;
+    -o-transition: opacity 400ms linear, max-height 400ms linear;
+    transition: opacity 400ms linear, max-height 400ms linear;
+    will-change: opacity, max-height;
+    .faq-accordion-content-box {
+      padding-bottom: 30px;
+    }
+  }
+}
+
+/* 
+====================================================
+End Questions Section
+====================================================
+*/

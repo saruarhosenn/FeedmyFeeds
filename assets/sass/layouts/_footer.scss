@@ -1,0 +1,29 @@
+@import "../base/variables";
+
+/* 
+====================================================
+Start Footer Section
+====================================================
+*/
+.footer-section {
+    background-color: $secondary-color;
+    .footer-link-list {
+        .link-list-item {
+            &:not(:last-child) {
+                margin-bottom: 15px;
+            }
+            a {
+                font-size: 14px;
+                &:hover {
+                    color: $third-color;
+                }
+            }
+        }
+    }
+}
+/* 
+====================================================
+End Footer Section
+====================================================
+*/
+

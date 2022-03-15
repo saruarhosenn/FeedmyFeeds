@@ -1,0 +1,195 @@
+@import "../base/variables";
+
+/* 
+====================================================
+Start Header SEction
+====================================================
+*/
+.header {
+  position: fixed;
+  top: 44px;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  @media (max-width: 1199px) {
+    .logo {
+      max-width: 180px;
+    }
+  }
+  @media (max-width: 991px) {
+    .logo {
+      max-width: 100%;
+    }
+  }
+  .menu-show-btn {
+    width: 35px;
+    position: relative;
+    cursor: pointer;
+    z-index: 999;
+    .bar {
+      width: 35px;
+      height: 4px;
+      background: #1b2749;
+      margin: 6px 0;
+    }
+  }
+  .menu-hide-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+  .main-menu {
+    .menu-item {
+      position: relative;
+      &:not(:last-child) {
+        margin-right: 35px;
+      }
+      .menu-link {
+        position: relative;
+        &:hover {
+          color: $primary-color;
+        }
+      }
+      @media (max-width: 991px) {
+        .menu-link {
+          color: $third-color;
+          padding: 0;
+          &:focus {
+            color: $third-color;
+          }
+        }
+      }
+      .menu-arrow-icon::after {
+        content: "";
+        background: url("../images/arrow-down-black.svg") no-repeat center;
+        position: absolute;
+        top: 50%;
+        right: -20px;
+        transform: translateY(-50%);
+        width: 15px;
+        height: 15px;
+        -webkit-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        -o-transform: translateY(-50%);
+      }
+      @media (max-width: 991px) {
+        .menu-arrow-icon::after {
+          background: url("../images/arrow-down-white.svg") no-repeat center;
+        }
+      }
+      .sub-menu {
+        border-top: 4px solid #4982c3;
+        position: absolute;
+        top: 200%;
+        left: 0;
+        width: 200px;
+        background-color: $third-color;
+        padding: 20px;
+        visibility: hidden;
+        opacity: 0;
+        -webkit-transition: all 0.3s linear;
+        -o-transition: all 0.3s linear;
+        transition: all 0.3s linear;
+        .menu-item:not(:last-child) {
+          margin: 0 0 15px;
+        }
+      }
+      &:hover .sub-menu {
+        top: 100%;
+        visibility: visible;
+        opacity: 1;
+      }
+      @media (max-width: 991px) {
+        .sub-menu {
+          border: 0;
+          position: static;
+          visibility: visible;
+          opacity: 1;
+          background-color: transparent;
+          width: 100%;
+          display: none;
+          padding-bottom: 0;
+          .menu-item:last-child {
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+    @media (max-width: 991px) {
+      .menu-item {
+        margin: 0 0 20px;
+      }
+    }
+  }
+  .nav-btn {
+    .nav-btn-1 {
+      border: 1px solid #9a9a9a;
+      &:hover {
+        color: $third-color;
+        background: $btn-bg;
+        border-color: transparent;
+      }
+    }
+    @media (max-width: 991px) {
+      .nav-btn-1 {
+        color: $third-color;
+        border-color: $third-color;
+        margin-bottom: 20px;
+      }
+      .nav-btn-2 {
+        padding-top: 15px;
+        padding-bottom: 15px;
+      }
+    }
+  }
+  @media (max-width: 991px) {
+    .menu-area {
+      position: relative;
+      position: fixed;
+      top: 0;
+      left: -130%;
+      padding: 60px 30px 30px;
+      background: $btn-bg;
+      width: 320px;
+      z-index: 9999;
+      height: 100vh;
+      -webkit-transition: all 0.6s ease-in;
+      -o-transition: all 0.6s ease-in;
+      transition: all 0.6s ease-in;
+      overflow-y: scroll;
+      overflow-x: hidden;
+      -ms-overflow-style: none; /* IE and Edge */
+      scrollbar-width: none; /* Firefox */
+      &.show-menu {
+        left: 0%;
+        -webkit-transition: all 0.6s ease-in;
+        -o-transition: all 0.6s ease-in;
+        transition: all 0.6s ease-in;
+      }
+      &::-webkit-scrollbar {
+        display: none;
+      }
+    }
+  }
+  &.sticky-menu {
+    top: 0;
+    left: 0;
+    background-color: $third-color;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  }
+  @media (max-width: 991px) {
+    & {
+      top: 15px;
+      padding: 10px 0;
+      &.sticky-menu {
+        padding: 0 0;
+      }
+    }
+  }
+}
+/* 
+====================================================
+End Header SEction
+====================================================
+*/

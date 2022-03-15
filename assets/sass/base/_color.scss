@@ -1,0 +1,28 @@
+@import "./variables";
+
+/* 
+==================================
+Text & BG Color 
+==================================
+*/
+/*--- Text Color ---*/
+.primary-color {
+    color: $primary-color;
+}
+
+.secondary-color {
+    color: $secondary-color;
+}
+
+.third-color {
+    color: $third-color;
+}
+
+.four-color {
+    color: $four-color;
+}
+
+/*--- BG Color ---*/
+.primary-bg {
+    background-color: $primary-bg;
+}

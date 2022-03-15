@@ -1,0 +1,244 @@
+@import "../base/variables";
+
+/* 
+====================================================
+Start Pricing Section
+====================================================
+*/
+.pricing-wrapper {
+  max-width: 973px;
+  .pricing-tab {
+    padding: 4px;
+    max-width: 536px;
+    background-color: #f9f9f9;
+    .pricing-tablinks {
+      text-transform: none;
+      min-width: 262px;
+      color: #989898;
+      padding: 16px 0;
+      background-color: #f9f9f9;
+      &.active {
+        background: $btn-bg;
+        color: $third-color;
+      }
+    }
+    @media (max-width: 575px) {
+      .pricing-tablinks {
+        min-width: 220px;
+      }
+    }
+    @media (max-width: 460px) {
+      .pricing-tablinks {
+        min-width: 200px;
+      }
+    }
+    @media (max-width: 420px) {
+      .pricing-tablinks {
+        min-width: 180px;
+      }
+    }
+    @media (max-width: 380px) {
+      .pricing-tablinks {
+        min-width: 220px;
+      }
+    }
+  }
+  @media (max-width: 380px) {
+    .pricing-tab {
+      flex-direction: column !important;
+      background-color: transparent;
+    }
+  }
+  .pricing-main-tab {
+    .pricing-tabcontent {
+      display: none;
+      -webkit-animation: fadeEffect 1s;
+      animation: fadeEffect 1s;
+      @-webkit-keyframes fadeEffect {
+        from {
+          opacity: 0;
+        }
+
+        to {
+          opacity: 1;
+        }
+      }
+
+      @keyframes fadeEffect {
+        from {
+          opacity: 0;
+        }
+
+        to {
+          opacity: 1;
+        }
+      }
+      .pricing-btn-area {
+        .pricing-btn-parrent {
+          margin-bottom: 20px;
+          .pricing-btn {
+            border: 1px solid #9a9a9a;
+            border-radius: 7px;
+            -webkit-border-radius: 7px;
+            -moz-border-radius: 7px;
+            -ms-border-radius: 7px;
+            -o-border-radius: 7px;
+          }
+          @media (max-width: 450px) {
+            .pricing-btn {
+              padding: 15px 8px;
+            }
+          }
+        }
+        .show-more-plans-content {
+          display: none;
+        }
+      }
+      .pricing-right-content {
+        max-width: 376px;
+        .pricing-right-content-list {
+          .pricing-right-content-list-item:not(:last-child) {
+            margin-bottom: 30px !important;
+          }
+        }
+      }
+    }
+    .pricing-agency-top-text {
+      margin-top: 215px;
+      .agency-range {
+        position: relative;
+        .monthly-spend-content {
+          width: 326px;
+          position: absolute;
+          /* top: -1355%; */
+          top: -218px;
+          left: 50%;
+          transform: translateX(-50%);
+          -webkit-transform: translateX(-50%);
+          -moz-transform: translateX(-50%);
+          -ms-transform: translateX(-50%);
+          -o-transform: translateX(-50%);
+          .monthly-spend-content-box1 {
+            position: relative;
+            background-color: #4a6ab7;
+            border-radius: 8px;
+            padding: 22px 30px;
+            span {
+              font-size: 2.8rem;
+              line-height: 2.4rem;
+            }
+            &::after {
+              content: "";
+              position: absolute;
+              left: 50%;
+              bottom: -23px;
+              transform: translateX(-50%);
+              -webkit-transform: translateX(-50%);
+              -moz-transform: translateX(-50%);
+              -ms-transform: translateX(-50%);
+              -o-transform: translateX(-50%);
+              display: inline-block;
+              width: 0;
+              height: 0;
+              border-style: solid;
+              border-width: 24px 18px 0 18px;
+              border-color: #4a6ab7 transparent transparent transparent;
+            }
+          }
+          .monthly-spend-content-box2 {
+            width: 265px;
+            padding: 16px 0px;
+            text-align: center;
+            background-color: #f9f9fb;
+            box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+          }
+        }
+        @media (max-width: 400px) {
+          .monthly-spend-content {
+            width: 300px;
+          }
+        }
+        .agency-range-field {
+          -webkit-appearance: none;
+          width: 100%;
+          height: 12px;
+          background: #2f2f2f;
+          border-radius: 5px;
+          outline: none;
+          border: none;
+          z-index: 2222;
+        }
+        .agency-range-field::-webkit-slider-thumb {
+          -webkit-appearance: none;
+          width: 36px;
+          height: 36px;
+          border-radius: 50%;
+          background: #fff;
+          border: 7px solid #4a6ab7;
+          cursor: pointer;
+          box-shadow: 0px 8px 34px rgba(74, 106, 183, 0.2);
+        }
+        .agency-range-field::-moz-range-thumb {
+          -webkit-appearance: none;
+          width: 36px;
+          height: 36px;
+          border-radius: 50%;
+          background: #fff;
+          border: 7px solid #4a6ab7;
+          cursor: pointer;
+          box-shadow: 0px 8px 34px rgba(74, 106, 183, 0.2);
+        }
+        .agency-range .agency-range-field::-moz-range-progress {
+          /* background color not supported in chrome browser */
+          background: linear-gradient(#4a6ab7, #49bac4);
+          height: 12px;
+        }
+      }
+      .agency-range-text {
+        p {
+          padding: 8px 20px;
+          background: #f9f9fb;
+          box-shadow: 10px 14px 34px rgba(74, 106, 183, 0.12);
+          border-radius: 30px;
+        }
+      }
+      @media (max-width: 575px) {
+        .agency-range-text {
+          flex-wrap: wrap !important;
+          justify-content: flex-start !important;
+          p {
+            margin: 5px;
+          }
+        }
+      }
+    }
+    .agency-text-list {
+      .agency-text-list-item {
+        &:not(:last-child) {
+          margin-bottom: 18px;
+        }
+        span:nth-child(1) {
+          width: 24px;
+          height: 24px;
+          line-height: 24px;
+          background-color: #4a6ab7;
+          text-align: center;
+          border-radius: 50%;
+          -webkit-border-radius: 50%;
+          -moz-border-radius: 50%;
+          -ms-border-radius: 50%;
+          -o-border-radius: 50%;
+        }
+        span:nth-child(2) {
+          color: #000000;
+        }
+      }
+    }
+  }
+}
+
+/* 
+====================================================
+End Pricing Section
+====================================================
+*/

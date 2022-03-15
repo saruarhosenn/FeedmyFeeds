@@ -1,0 +1,30 @@
+@import "../base/variables";
+
+/* 
+====================================================
+Start Campaigns SEction
+====================================================
+*/
+.campaigns-wrapper {
+    max-width: 1114px;
+    .campaigns-text {
+        .campaigns-title {
+            .campaigns-title-img {
+                vertical-align: top;
+            }
+        }
+    }
+    @media (max-width: 991px) {
+        .campaigns-img {
+            margin-top: 40px;
+            .campaigns-main-img {
+                width: 100%;
+            }
+        }
+    }
+} 
+/* 
+====================================================
+End Campaigns SEction
+====================================================
+*/

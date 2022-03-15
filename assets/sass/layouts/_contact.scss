@@ -1,0 +1,51 @@
+@import "../base/variables";
+
+/* 
+====================================================
+Start Contact Section
+====================================================
+*/
+.contact-section {
+  background: no-repeat top / cover;
+  .contact-wrapper {
+    max-width: 920px;
+    .contact-form-wrapper {
+      max-width: 730px;
+      padding: 25px;
+      .contact-form-area {
+        max-width: 540px;
+        .company-form-box {
+          .product-eed-link {
+            color: #4a6ab7;
+          }
+        }
+        .company-user-field {
+          padding: 10px;
+          border: 1px solid $primary-color;
+          border-radius: 8px;
+          -webkit-border-radius: 8px;
+          -moz-border-radius: 8px;
+          -ms-border-radius: 8px;
+          -o-border-radius: 8px;
+}
+      }
+      .user-form-area {
+        .user-check-box {
+          margin-left: 13px;
+          .user-check-box-input {
+            cursor: pointer;
+          }
+          a {
+            color: $primary-color;
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}
+/* 
+====================================================
+End Contact Section
+====================================================
+*/
