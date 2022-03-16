@@ -1036,7 +1036,7 @@ Start Pricing Section
   cursor: pointer;
   box-shadow: 0px 8px 34px rgba(74, 106, 183, 0.2);
 }
-.pricing-wrapper .pricing-main-tab .pricing-agency-top-text .agency-range .agency-range .agency-range-field::-moz-range-progress {
+.pricing-wrapper .pricing-main-tab .pricing-agency-top-text .agency-range .agency-range-field::-moz-range-progress {
   /* background color not supported in chrome browser */
   background: linear-gradient(#4a6ab7, #49bac4);
   height: 12px;
