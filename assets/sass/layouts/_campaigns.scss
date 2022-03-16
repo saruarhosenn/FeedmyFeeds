@@ -14,6 +14,34 @@ Start Campaigns SEction
             }
         }
     }
+    @media (max-width: 1799px) {
+        .campaigns-img {
+            .campaigns-main-img {
+                max-width: 890px;
+            }
+        }
+    }
+    @media (max-width: 1599px) {
+        .campaigns-img {
+            .campaigns-main-img {
+                max-width: 790px;
+            }
+        }
+    }
+    @media (max-width: 1399px) {
+        .campaigns-img {
+            .campaigns-main-img {
+                max-width: 690px;
+            }
+        }
+    }
+    @media (max-width: 1199px) {
+        .campaigns-img {
+            .campaigns-main-img {
+                max-width: 590px;
+            }
+        }
+    }
     @media (max-width: 991px) {
         .campaigns-img {
             margin-top: 40px;

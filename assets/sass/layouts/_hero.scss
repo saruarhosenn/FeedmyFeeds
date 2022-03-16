@@ -46,6 +46,34 @@ Start Hero SEction
           margin: auto;
         }
       }
+      @media (max-width: 1799px) {
+        .hero-silder-img {
+          .hero-silder-main-img {
+            max-width: 890px;
+          }
+        }
+      }
+      @media (max-width: 1599px) {
+        .hero-silder-img {
+          .hero-silder-main-img {
+            max-width: 790px;
+          }
+        }
+      }
+      @media (max-width: 1399px) {
+        .hero-silder-img {
+          .hero-silder-main-img {
+            max-width: 690px;
+          }
+        }
+      }
+      @media (max-width: 1199px) {
+        .hero-silder-img {
+          .hero-silder-main-img {
+            max-width: 590px;
+          }
+        }
+      }
       @media (max-width: 991px) {
         .hero-silder-img {
           margin-top: 10px;

@@ -584,6 +584,26 @@ Start Hero SEction
     margin: auto;
   }
 }
+@media (max-width: 1799px) {
+  .hero-section .hero-slider-bg .hero-wrapper .hero-silder-img .hero-silder-main-img {
+    max-width: 890px;
+  }
+}
+@media (max-width: 1599px) {
+  .hero-section .hero-slider-bg .hero-wrapper .hero-silder-img .hero-silder-main-img {
+    max-width: 790px;
+  }
+}
+@media (max-width: 1399px) {
+  .hero-section .hero-slider-bg .hero-wrapper .hero-silder-img .hero-silder-main-img {
+    max-width: 690px;
+  }
+}
+@media (max-width: 1199px) {
+  .hero-section .hero-slider-bg .hero-wrapper .hero-silder-img .hero-silder-main-img {
+    max-width: 590px;
+  }
+}
 @media (max-width: 991px) {
   .hero-section .hero-slider-bg .hero-wrapper .hero-silder-img {
     margin-top: 10px;
@@ -628,6 +648,26 @@ Start Campaigns SEction
 }
 .campaigns-wrapper .campaigns-text .campaigns-title .campaigns-title-img {
   vertical-align: top;
+}
+@media (max-width: 1799px) {
+  .campaigns-wrapper .campaigns-img .campaigns-main-img {
+    max-width: 890px;
+  }
+}
+@media (max-width: 1599px) {
+  .campaigns-wrapper .campaigns-img .campaigns-main-img {
+    max-width: 790px;
+  }
+}
+@media (max-width: 1399px) {
+  .campaigns-wrapper .campaigns-img .campaigns-main-img {
+    max-width: 690px;
+  }
+}
+@media (max-width: 1199px) {
+  .campaigns-wrapper .campaigns-img .campaigns-main-img {
+    max-width: 590px;
+  }
 }
 @media (max-width: 991px) {
   .campaigns-wrapper .campaigns-img {
