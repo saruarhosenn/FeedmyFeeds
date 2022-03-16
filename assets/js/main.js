@@ -18,7 +18,7 @@
   });
 
   /* ====== MOBILE DROPDOWN MENU ====== */
-  $(".menu-link").click(function () {
+  $("#dropdown-menu-link").click(function () {
     $(".sub-menu").toggle();
   });
 
@@ -76,11 +76,11 @@
       "Tool for agencies and brands to improve their creatives from their catalog of products and services for dynamic ads.",
     speed: 50,
     waitUntilVisible: true,
-    startDelay: 2500,
+    startDelay: 2000,
   }).go();
 
   new TypeIt("#heading2", {
-    strings: "hello <span>Automate</span> <br /> our ads.",
+    strings: "Start to <span>Automate</span> <br /> our ads.",
     speed: 50,
     waitUntilVisible: true,
     startDelay: 10500,
