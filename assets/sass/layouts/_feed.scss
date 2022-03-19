@@ -2,22 +2,20 @@
 
 /* 
 ====================================================
-Start Feed SEction
+Start Feed Section
 ====================================================
 */
 .feed-wrapper {
-    max-width: 1110px;
-    .feed-text {
-        max-width: 435px;
-    }
+  max-width: 1110px;
+  .feed-text {
+    max-width: 435px;
     @media (max-width: 767px) {
-        .feed-text {
-            max-width: 100%;
-        }
+      max-width: 100%;
     }
+  }
 }
 /* 
 ====================================================
-End Feed SEction
+End Feed Section
 ====================================================
 */

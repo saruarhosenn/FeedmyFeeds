@@ -11,7 +11,7 @@ Start Contact Section
     max-width: 920px;
     .contact-form-wrapper {
       max-width: 730px;
-      padding: 25px;
+      padding: 27px 25px 50px;
       .contact-form-area {
         max-width: 540px;
         .company-form-box {
@@ -27,7 +27,7 @@ Start Contact Section
           -moz-border-radius: 8px;
           -ms-border-radius: 8px;
           -o-border-radius: 8px;
-}
+        }
       }
       .user-form-area {
         .user-check-box {
@@ -38,6 +38,15 @@ Start Contact Section
           a {
             color: $primary-color;
             text-decoration: underline;
+          }
+        }
+        .form-submit {
+          .form-submit-btn {
+            box-shadow: none;
+            @media (max-width: 575px) {
+              padding-right: 60px;
+              padding-left: 60px;
+            }
           }
         }
       }

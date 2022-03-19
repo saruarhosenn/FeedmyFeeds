@@ -50,14 +50,10 @@ Start Filter Slider Section
                   /* height: 100%; */
                 }
               }
-            }
-            @media (max-width: 440px) {
-              .filter-slider-item {
+              @media (max-width: 440px) {
                 width: 300px;
               }
-            }
-            @media (max-width: 370px) {
-              .filter-slider-item {
+              @media (max-width: 370px) {
                 width: 270px;
               }
             }
@@ -82,9 +78,7 @@ Start Filter Slider Section
             }
           }
         }
-      }
-      @media (max-width: 575px) {
-        .panels {
+        @media (max-width: 575px) {
           width: 100%;
         }
       }
@@ -102,6 +96,7 @@ Start Filter Slider Section
       #five:checked ~ .slider-tab #five-tab {
         background: $btn-bg;
         color: $third-color;
+        box-shadow: 10px 14px 34px rgba(74, 106, 183, 0.12);
       }
     }
     .slider-button {
@@ -152,9 +147,7 @@ Start Filter Slider Section
           margin: 0 5px;
         }
       }
-    }
-    @media (max-width: 575px) {
-      .slider-button {
+      @media (max-width: 575px) {
         margin-top: 20px;
         position: static;
       }

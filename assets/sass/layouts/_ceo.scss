@@ -7,8 +7,94 @@ Start CEO Section
 */
 .ceo-section {
   .ceo-wrapper {
-    background: no-repeat center / cover;
-    max-width: 1110px;
+    position: relative;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    background: linear-gradient(to right, #4982c3, #49bac4);
+    max-width: 1180px;
+    min-height: 360px;
+    @media (max-width: 991px) {
+      padding: 60px 45px 35px;
+    }
+    @media (max-width: 575px) {
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+    .ceo-shape {
+      position: absolute;
+      top: 0;
+      right: 0;
+      @media (max-width: 991px) {
+        width: 100%;
+        max-width: 300px;
+        left: 0;
+        right: 0;
+        bottom: -165px;
+        margin: auto;
+      }
+      @media (max-width: 767px) {
+        bottom: -240px;
+      }
+      @media (max-width: 575px) {
+        width: auto;
+        max-width: auto;
+        bottom: -215px;
+      }
+    }
+    .ceo-desc {
+      .ceo-desc-text {
+        @media (max-width: 575px) {
+          font-size: 20px;
+          line-height: 28px;
+          span {
+            font-size: 20px;
+            line-height: 28px;
+          }
+        }
+        .quoe-left {
+          position: relative;
+          &::before {
+            content: "";
+            position: absolute;
+            top: -21px;
+            left: -31px;
+            background: url("../images/ceo/quoe-left.svg") no-repeat center /
+              25px;
+            width: 25px;
+            height: 25px;
+            @media (max-width: 991px) {
+              top: -15px;
+              left: -25px;
+              background-size: 15px;
+              width: 15px;
+              height: 15px;
+            }
+          }
+        }
+        .quoe-right {
+          position: relative;
+          &::after {
+            content: "";
+            position: absolute;
+            top: 3px;
+            right: -39px;
+            background: url("../images/ceo/quoe-right.svg") no-repeat center /
+              25px;
+            width: 25px;
+            height: 25px;
+            @media (max-width: 991px) {
+              right: -25px;
+              background-size: 15px;
+              width: 15px;
+              height: 15px;
+            }
+          }
+        }
+      }
+    }
     .ceo-info {
       .ceo-info-img {
         width: 183px;
@@ -18,21 +104,16 @@ Start CEO Section
         -moz-border-radius: 50%;
         -ms-border-radius: 50%;
         -o-border-radius: 50%;
+        @media (max-width: 991px) {
+          width: 100px;
+          height: 100px;
+        }
+        @media (max-width: 575px) {
+          width: 56px;
+          height: 56px;
+        }
       }
     }
-  }
-  @media (max-width: 767px) {
-      .ceo-wrapper {
-         padding-right: 20px;
-         padding-left: 20px;
-      }
-  }
-
-  @media (max-width: 767px) {
-      .ceo-wrapper {
-        padding-right: 10px;
-        padding-left: 10px;
-      }
   }
 }
 /* 

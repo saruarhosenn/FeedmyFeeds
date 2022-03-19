@@ -3,7 +3,7 @@
 
 /* 
 ====================================================
-Start Editor SEction
+Start Editor Section
 ====================================================
 */
 .editor-section {
@@ -17,9 +17,7 @@ Start Editor SEction
   }
   .editor-text {
     max-width: 469px;
-  }
-  @media (max-width: 767px) {
-    .editor-text {
+    @media (max-width: 767px) {
       max-width: 100%;
       margin-bottom: 15px;
     }
@@ -27,6 +25,6 @@ Start Editor SEction
 }
 /* 
 ====================================================
-End Editor SEction
+End Editor Section
 ====================================================
 */

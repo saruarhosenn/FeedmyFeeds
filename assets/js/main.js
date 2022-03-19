@@ -1,11 +1,13 @@
-(function ($) {
-  "use strict";
+$(document).ready(function(){
   /* ======= STICKY MENU ======= */
-  $(window).on("scroll", function () {
-    if ($(window).scrollTop()) {
-      $("header").addClass("sticky-menu");
+  var windows = $(window);
+  var sticky = $(".header-sticky");
+  windows.on("scroll", function () {
+    var scroll = windows.scrollTop();
+    if (scroll < 250) {
+      sticky.removeClass("stick");
     } else {
-      $("header").removeClass("sticky-menu");
+      sticky.addClass("stick");
     }
   });
 
@@ -15,11 +17,6 @@
   });
   $(".menu-hide-btn").click(function () {
     $(".menu-area").removeClass("show-menu");
-  });
-
-  /* ====== MOBILE DROPDOWN MENU ====== */
-  $("#dropdown-menu-link").click(function () {
-    $(".sub-menu").toggle();
   });
 
   /* ====== EDITOR VIDEO ON CLICK CHANGE ====== */
@@ -54,43 +51,6 @@
     console.log("a");
   });
 
-  /* ====== PRICING SHOW, MORE CONTENT ====== */
-  $(".show-more-plans-btn").click(function () {
-    $(".show-more-plans-content").toggle();
-    if ($(".show-more-plans-btn").text() == "Show more plans") {
-      $(this).text("Show fewer plans");
-    } else {
-      $(this).text("Show more plans");
-    }
-  });
-
-  /* ============ HERO TYPING TRXT ============= */
-  new TypeIt("#heading1", {
-    strings: "Start to <span>Automate</span> <br /> our ads.",
-    speed: 50,
-    waitUntilVisible: true,
-  }).go();
-
-  new TypeIt("#desc1", {
-    strings:
-      "Tool for agencies and brands to improve their creatives from their catalog of products and services for dynamic ads.",
-    speed: 50,
-    waitUntilVisible: true,
-    startDelay: 2000,
-  }).go();
-
-  new TypeIt("#heading2", {
-    strings: "Start to <span>Automate</span> <br /> our ads.",
-    speed: 50,
-    waitUntilVisible: true,
-    startDelay: 10500,
-  }).go();
-
-  new TypeIt("#desc2", {
-    strings:
-      "Tool for agencies and brands to improve their creatives from their catalog of products and services for dynamic ads.",
-    speed: 50,
-    waitUntilVisible: true,
-    startDelay: 12000,
-  }).go();
-})(jQuery);
+  /* ======== LANGUEGE SELECT ========= */
+  $(".languege-select").niceSelect();
+});

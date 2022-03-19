@@ -6,11 +6,11 @@ Start Header SEction
 ====================================================
 */
 .header {
-  position: fixed;
+  position: absolute;
   top: 44px;
   left: 0;
   width: 100%;
-  z-index: 999;
+  z-index: 9999;
   .menu-wrapper {
     @media (max-width: 1199px) {
       .logo {
@@ -50,9 +50,7 @@ Start Header SEction
           &:hover {
             color: $primary-color;
           }
-        }
-        @media (max-width: 991px) {
-          .menu-link {
+          @media (max-width: 991px) {
             color: $third-color;
             padding: 0;
             &:focus {
@@ -73,53 +71,12 @@ Start Header SEction
           -moz-transform: translateY(-50%);
           -ms-transform: translateY(-50%);
           -o-transform: translateY(-50%);
-        }
-        @media (max-width: 991px) {
-          .menu-arrow-icon::after {
+          @media (max-width: 991px) {
             background: url("../images/arrow-down-white.svg") no-repeat center;
+            top: 40%;
           }
-        }
-        .sub-menu {
-          border-top: 4px solid #4982c3;
-          position: absolute;
-          top: 200%;
-          left: 0;
-          width: 200px;
-          background-color: $third-color;
-          padding: 20px;
-          visibility: hidden;
-          opacity: 0;
-          -webkit-transition: all 0.3s linear;
-          -o-transition: all 0.3s linear;
-          transition: all 0.3s linear;
-          .menu-item:not(:last-child) {
-            margin: 0 0 15px;
-          }
-        }
-        &:hover .sub-menu {
-          top: 100%;
-          visibility: visible;
-          opacity: 1;
         }
         @media (max-width: 991px) {
-          .sub-menu {
-            border: 0;
-            position: static;
-            visibility: visible;
-            opacity: 1;
-            background-color: transparent;
-            width: 100%;
-            display: none;
-            padding-bottom: 0;
-            box-shadow: none !important;
-            .menu-item:last-child {
-              margin-bottom: 0;
-            }
-          }
-        }
-      }
-      @media (max-width: 991px) {
-        .menu-item {
           margin: 0 0 20px;
         }
       }
@@ -127,22 +84,22 @@ Start Header SEction
     .nav-btn {
       .nav-btn-1 {
         border: 1px solid #9a9a9a;
+        padding: 8.5px 23.5px;
         &:hover {
           color: $third-color;
           background: $btn-bg;
           border-color: transparent;
         }
-      }
-      .nav-btn-2 {
-        box-shadow: none;
-      }
-      @media (max-width: 991px) {
-        .nav-btn-1 {
+        @media (max-width: 991px) {
           color: $third-color;
           border-color: $third-color;
           margin-bottom: 20px;
         }
-        .nav-btn-2 {
+      }
+      .nav-btn-2 {
+        box-shadow: none;
+        padding: 9px 23.5px;
+        @media (max-width: 991px) {
           padding-top: 15px;
           padding-bottom: 15px;
         }
@@ -176,34 +133,60 @@ Start Header SEction
           display: none;
         }
       }
-    }
-    @media (max-width: 365px) {
-      .menu-area {
+      @media (max-width: 365px) {
         width: 100%;
       }
     }
-  }
-  @media (max-width: 991px) {
-    .menu-wrapper {
+    @media (max-width: 1199px) {
+      padding-right: 35px;
+      padding-left: 35px;
+    }
+    @media (max-width: 991px) {
       padding: 12px 20px;
     }
   }
-  &.sticky-menu {
-    top: 0;
+  &.stick {
+    position: fixed;
+    top: 15px;
     left: 0;
-    background-color: $third-color;
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    -webkit-animation: 600ms ease-in-out 0s normal none 1 running fadeInDown;
+    animation: 600ms ease-in-out 0s normal none 1 running fadeInDown;
+    .menu-wrapper {
+      box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    }
   }
-  @media (max-width: 991px) {
-    & {
-      top: 15px;
-      padding: 10px 0;
-      &.sticky-menu {
-        padding: 4px 0;
-      }
+
+  @-webkit-keyframes fadeInDown {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(-30px);
+      transform: translateY(-30px);
+    }
+
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes fadeInDown {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(-30px);
+      -ms-transform: translateY(-30px);
+      transform: translateY(-30px);
+    }
+
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0);
+      -ms-transform: translateY(0);
+      transform: translateY(0);
     }
   }
 }
+
 /* 
 ====================================================
 End Header SEction

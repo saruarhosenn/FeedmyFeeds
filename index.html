@@ -12,7 +12,7 @@
     <meta name="keywords" content="Website keywords" />
     <!---- Website Title ---->
     <title>Website Title</title>
-    <!------- Favfaq-icon ------->
+    <!------- Favicon ------->
     <link
       rel="shortcut faq-icon"
       type="image/x-faq-icon"
@@ -22,6 +22,7 @@
     <link rel="stylesheet" href="assets/fonts/fonts.css" />
     <!------- Css Here ------->
     <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="assets/css/nice-select.css" />
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="assets/css/spacing.css" />
@@ -33,9 +34,9 @@
 	  Start Header Section 
 	  =====================================================
 	-->
-    <header class="header transition-ease-in-out">
+    <header class="header header-sticky sticky__menu">
       <div class="container">
-        <div class="menu-wrapper rounded-pill py-20 px-20 primary-bg">
+        <div class="menu-wrapper rounded-pill py-20 px-45 primary-bg">
           <div class="row align-items-center">
             <!------- Logo =------->
             <div class="col-lg-3 col-7">
@@ -75,59 +76,28 @@
                 <ul class="main-menu">
                   <li class="menu-item d-lg-inline-block">
                     <a
-                      class="menu-link py-10 d-block text-capitalize size-sm primary-font-400 primary-color"
+                      class="menu-link py-10 d-inline-block text-capitalize size-sm primary-font-400 primary-color"
                       href="#"
                       >home</a
                     >
                   </li>
                   <li class="menu-item d-lg-inline-block">
                     <a
-                      id="dropdown-menu-link"
-                      class="menu-link py-10 menu-arrow-icon d-block text-capitalize size-sm primary-font-400 primary-color"
+                      class="menu-link py-10 menu-arrow-icon d-inline-block text-capitalize size-sm primary-font-400 primary-color"
                       href="#"
                       >about</a
                     >
-                    <ul class="sub-menu shadow">
-                      <li class="menu-item">
-                        <a
-                          class="menu-link d-block text-capitalize size-sm primary-font-400 primary-color"
-                          href="#"
-                          >service</a
-                        >
-                      </li>
-                      <li class="menu-item">
-                        <a
-                          class="menu-link d-block text-capitalize size-sm primary-font-400 primary-color"
-                          href="#"
-                          >service</a
-                        >
-                      </li>
-                      <li class="menu-item">
-                        <a
-                          class="menu-link d-block text-capitalize size-sm primary-font-400 primary-color"
-                          href="#"
-                          >service</a
-                        >
-                      </li>
-                      <li class="menu-item">
-                        <a
-                          class="menu-link d-block text-capitalize size-sm primary-font-400 primary-color"
-                          href="#"
-                          >service</a
-                        >
-                      </li>
-                    </ul>
                   </li>
                   <li class="menu-item d-lg-inline-block">
                     <a
-                      class="menu-link py-10 d-block text-capitalize size-sm primary-font-400 primary-color"
+                      class="menu-link py-10 d-inline-block text-capitalize size-sm primary-font-400 primary-color"
                       href="#"
                       >service</a
                     >
                   </li>
                   <li class="menu-item d-lg-inline-block">
                     <a
-                      class="menu-link py-10 d-block text-capitalize size-sm primary-font-400 primary-color"
+                      class="menu-link py-10 d-inline-block text-capitalize size-sm primary-font-400 primary-color"
                       href="#"
                       >course</a
                     >
@@ -139,12 +109,12 @@
                   <li class="me-20">
                     <a
                       href="#"
-                      class="nav-btn-1 link-btn primary-font-400 primary-color py-10 px-20"
+                      class="nav-btn-1 link-btn primary-font-400 primary-color"
                       >LOG IN</a
                     >
                   </li>
                   <li class="">
-                    <a href="#" class="nav-btn-2 link-btn link-btn-1 py-10"
+                    <a href="#" class="nav-btn-2 link-btn link-btn-1"
                       >BOOK A DEMO</a
                     >
                   </li>
@@ -167,219 +137,209 @@
 		  Star tHero  Section 
 		  =====================================================
 		-->
-      <section class="hero-section">
-        <div class="hero-slider">
-          <div class="swiper-wrapper">
-            <!-- Slider 1 -->
-            <div class="swiper-slide">
-              <div
-                class="hero-slider-bg"
-                style="background-image: url('assets/images/hero/slider1.png')"
-              >
-                <div class="container">
-                  <div class="hero-wrapper mx-auto">
-                    <div class="row g-5 align-items-center">
-                      <article class="col-lg-6">
-                        <div class="hero-silder-text text-center text-lg-start">
-                          <h1
-                            class="hero-slider-title text-capitalize"
-                            id="heading1"
-                          ></h1>
-                          <p
-                            class="hero-slider-desc hero-slider1-desc mt-15 mb-30"
-                            id="desc1"
-                          ></p>
-                          <a
-                            href="#"
-                            class="hero-slider-btn link-btn link-btn-2 d-flex align-items-center justify-content-between mx-auto mx-lg-0"
-                          >
-                            <span>BOOK A DEMO</span>
-                            <img
-                              src="assets/images/hero/arrow-white.svg"
-                              alt="arrow-white"
-                            />
-                          </a>
-                        </div>
-                      </article>
-                      <article class="col-lg-6">
-                        <div class="hero-silder-img">
-                          <img
-                            src="assets/images/hero/hero-img.png"
-                            alt="hero-img"
-                            class="hero-silder-main-img"
-                          />
-                        </div>
-                      </article>
-                    </div>
-                    <div class="hero-company-logo primary-bg mt-90">
-                      <div class="row g-4 align-items-center">
-                        <article class="col-md-2 col-4">
-                          <div class="company-logo text-center">
-                            <img
-                              src="assets/images/hero/company1.png"
-                              alt="company"
-                              class="img-fluid"
-                            />
-                          </div>
-                        </article>
-                        <article class="col-md-2 col-4">
-                          <div class="company-logo text-center">
-                            <img
-                              src="assets/images/hero/company2.png"
-                              alt="company"
-                              class="img-fluid"
-                            />
-                          </div>
-                        </article>
-                        <article class="col-md-2 col-4">
-                          <div class="company-logo text-center">
-                            <img
-                              src="assets/images/hero/company3.png"
-                              alt="company"
-                              class="img-fluid"
-                            />
-                          </div>
-                        </article>
-                        <article class="col-md-2 col-4">
-                          <div class="company-logo text-center">
-                            <img
-                              src="assets/images/hero/company4.png"
-                              alt="company"
-                              class="img-fluid"
-                            />
-                          </div>
-                        </article>
-                        <article class="col-md-2 col-4">
-                          <div class="company-logo text-center">
-                            <img
-                              src="assets/images/hero/company5.png"
-                              alt="company"
-                              class="img-fluid"
-                            />
-                          </div>
-                        </article>
-                        <article class="col-md-2 col-4">
-                          <div class="company-logo text-center">
-                            <img
-                              src="assets/images/hero/company6.png"
-                              alt="company"
-                              class="img-fluid"
-                            />
-                          </div>
-                        </article>
-                      </div>
-                    </div>
-                  </div>
+      <!-- Start Hero Dark Banner -->
+      <section class="hero-section hero-dark-bg">
+        <div class="shape"></div>
+        <div class="container">
+          <div class="hero-wrapper mx-auto">
+            <div class="row g-5 align-items-center">
+              <article class="col-lg-6">
+                <div class="hero-text text-center text-lg-start">
+                  <h1 class="hero-title text-capitalize">
+                    Start to <span class="typeText"></span> <br />
+                    your ads
+                  </h1>
+                  <p class="hero-desc hero-desc1 mt-15 mb-30">
+                    Tool for agencies and brands to improve their creatives from
+                    their catalog of products and services for dynamic ads.
+                  </p>
+                  <a
+                    href="#"
+                    class="hero-btn link-btn link-btn-2 d-flex align-items-center justify-content-between mx-auto mx-lg-0"
+                  >
+                    <span>BOOK A DEMO</span>
+                    <img
+                      src="assets/images/hero/arrow-white.svg"
+                      alt="arrow-white"
+                    />
+                  </a>
                 </div>
-              </div>
+              </article>
+              <article class="col-lg-6">
+                <div class="hero-img">
+                  <img
+                    src="assets/images/hero/hero-img.png"
+                    alt="hero-img"
+                    class="hero-main-img"
+                  />
+                </div>
+              </article>
             </div>
-
-            <!-- Slider 2 -->
-            <div class="swiper-slide">
-              <div
-                class="hero-slider-bg"
-                style="background-image: url('assets/images/hero/slider2.png')"
-              >
-                <div class="container">
-                  <div class="hero-wrapper mx-auto">
-                    <div class="row g-5 align-items-center">
-                      <article class="col-lg-6">
-                        <div class="hero-silder-text text-center text-lg-start">
-                          <h1
-                            class="hero-slider-title third-color text-capitalize"
-                            id="heading2"
-                          ></h1>
-                          <p
-                            class="hero-slider-desc third-color mt-15 mb-30"
-                            id="desc2"
-                          ></p>
-                          <a
-                            href="#"
-                            class="hero-slider-btn hero-slider2-btn link-btn link-btn-2 primary-bg secondary-color d-flex align-items-center justify-content-between mx-auto mx-lg-0"
-                          >
-                            <span>BOOK A DEMO</span>
-                            <img
-                              src="assets/images/hero/arrow-black.svg"
-                              alt="arrow-black"
-                            />
-                          </a>
-                        </div>
-                      </article>
-                      <article class="col-lg-6">
-                        <div class="hero-silder-img">
-                          <img
-                            src="assets/images/hero/hero-img.png"
-                            alt="hero-img"
-                            class="hero-silder-main-img"
-                          />
-                        </div>
-                      </article>
-                    </div>
-                    <div class="hero-company-logo primary-bg mt-90">
-                      <div class="row g-4 align-items-center">
-                        <article class="col-md-2 col-4">
-                          <div class="company-logo text-center">
-                            <img
-                              src="assets/images/hero/company1.png"
-                              alt="company"
-                              class="img-fluid"
-                            />
-                          </div>
-                        </article>
-                        <article class="col-md-2 col-4">
-                          <div class="company-logo text-center">
-                            <img
-                              src="assets/images/hero/company2.png"
-                              alt="company"
-                              class="img-fluid"
-                            />
-                          </div>
-                        </article>
-                        <article class="col-md-2 col-4">
-                          <div class="company-logo text-center">
-                            <img
-                              src="assets/images/hero/company3.png"
-                              alt="company"
-                              class="img-fluid"
-                            />
-                          </div>
-                        </article>
-                        <article class="col-md-2 col-4">
-                          <div class="company-logo text-center">
-                            <img
-                              src="assets/images/hero/company4.png"
-                              alt="company"
-                              class="img-fluid"
-                            />
-                          </div>
-                        </article>
-                        <article class="col-md-2 col-4">
-                          <div class="company-logo text-center">
-                            <img
-                              src="assets/images/hero/company5.png"
-                              alt="company"
-                              class="img-fluid"
-                            />
-                          </div>
-                        </article>
-                        <article class="col-md-2 col-4">
-                          <div class="company-logo text-center">
-                            <img
-                              src="assets/images/hero/company6.png"
-                              alt="company"
-                              class="img-fluid"
-                            />
-                          </div>
-                        </article>
-                      </div>
-                    </div>
+            <div class="hero-company-logo primary-bg mt-90">
+              <div class="row g-4 align-items-center">
+                <article class="col-md-2 col-4">
+                  <div class="company-logo text-center">
+                    <img
+                      src="assets/images/hero/company1.png"
+                      alt="company"
+                      class="img-fluid"
+                    />
                   </div>
-                </div>
+                </article>
+                <article class="col-md-2 col-4">
+                  <div class="company-logo text-center">
+                    <img
+                      src="assets/images/hero/company2.png"
+                      alt="company"
+                      class="img-fluid"
+                    />
+                  </div>
+                </article>
+                <article class="col-md-2 col-4">
+                  <div class="company-logo text-center">
+                    <img
+                      src="assets/images/hero/company3.png"
+                      alt="company"
+                      class="img-fluid"
+                    />
+                  </div>
+                </article>
+                <article class="col-md-2 col-4">
+                  <div class="company-logo text-center">
+                    <img
+                      src="assets/images/hero/company4.png"
+                      alt="company"
+                      class="img-fluid"
+                    />
+                  </div>
+                </article>
+                <article class="col-md-2 col-4">
+                  <div class="company-logo text-center">
+                    <img
+                      src="assets/images/hero/company5.png"
+                      alt="company"
+                      class="img-fluid"
+                    />
+                  </div>
+                </article>
+                <article class="col-md-2 col-4">
+                  <div class="company-logo text-center">
+                    <img
+                      src="assets/images/hero/company6.png"
+                      alt="company"
+                      class="img-fluid"
+                    />
+                  </div>
+                </article>
               </div>
             </div>
           </div>
         </div>
       </section>
+      <!-- End Hero Dark Banner -->
+
+      <!-- Start Hero Light Banner -->
+      <!-- <section
+        class="hero-section"
+        style="background-image: url('assets/images/hero/slider2.png')"
+      >
+        <div class="container">
+          <div class="hero-wrapper mx-auto">
+            <div class="row g-5 align-items-center">
+              <article class="col-lg-6">
+                <div class="hero-text text-center text-lg-start">
+                  <h1 class="hero-title third-color text-capitalize">
+                    Start to <span class="typeText">Automate</span> <br />
+                    your ads
+                  </h1>
+                  <p class="hero-desc third-color mt-15 mb-30">
+                    Tool for agencies and brands to improve their creatives from
+                    their catalog of products and services for dynamic ads.
+                  </p>
+                  <a
+                    href="#"
+                    class="hero-btn hero-btn2 link-btn link-btn-2 primary-bg secondary-color d-flex align-items-center justify-content-between mx-auto mx-lg-0"
+                  >
+                    <span>BOOK A DEMO</span>
+                    <img
+                      src="assets/images/hero/arrow-black.svg"
+                      alt="arrow-black"
+                    />
+                  </a>
+                </div>
+              </article>
+              <article class="col-lg-6">
+                <div class="hero-img">
+                  <img
+                    src="assets/images/hero/hero-img2.png"
+                    alt="hero-img"
+                    class="hero-main-img"
+                  />
+                </div>
+              </article>
+            </div>
+            <div class="hero-company-logo primary-bg mt-90">
+              <div class="row g-4 align-items-center">
+                <article class="col-md-2 col-4">
+                  <div class="company-logo text-center">
+                    <img
+                      src="assets/images/hero/company1.png"
+                      alt="company"
+                      class="img-fluid"
+                    />
+                  </div>
+                </article>
+                <article class="col-md-2 col-4">
+                  <div class="company-logo text-center">
+                    <img
+                      src="assets/images/hero/company2.png"
+                      alt="company"
+                      class="img-fluid"
+                    />
+                  </div>
+                </article>
+                <article class="col-md-2 col-4">
+                  <div class="company-logo text-center">
+                    <img
+                      src="assets/images/hero/company3.png"
+                      alt="company"
+                      class="img-fluid"
+                    />
+                  </div>
+                </article>
+                <article class="col-md-2 col-4">
+                  <div class="company-logo text-center">
+                    <img
+                      src="assets/images/hero/company4.png"
+                      alt="company"
+                      class="img-fluid"
+                    />
+                  </div>
+                </article>
+                <article class="col-md-2 col-4">
+                  <div class="company-logo text-center">
+                    <img
+                      src="assets/images/hero/company5.png"
+                      alt="company"
+                      class="img-fluid"
+                    />
+                  </div>
+                </article>
+                <article class="col-md-2 col-4">
+                  <div class="company-logo text-center">
+                    <img
+                      src="assets/images/hero/company6.png"
+                      alt="company"
+                      class="img-fluid"
+                    />
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section> -->
+      <!-- End Hero Light Banner -->
       <!-- 
 		  =====================================================
 		  End Hero Section 
@@ -518,7 +478,7 @@
               <article class="col-md-6">
                 <div class="feed-text text-center text-md-start">
                   <h2 class="feed-title size-xxl">Feed management</h2>
-                  <p class="feed-desc my-25">
+                  <p class="feed-desc mb-35 mt-20">
                     Optimize your feeds for the biggest eCommerce channels
                   </p>
                   <a href="#" class="feed-btn link-btn link-btn-1"
@@ -615,17 +575,33 @@
 		-->
       <section class="ceo-section primary-bg py-100">
         <div class="container">
-          <div
-            class="ceo-wrapper mx-auto px-45 py-65"
-            style="background-image: url('assets/images/ceo/ceo-banner.png')"
-          >
+          <div class="ceo-wrapper mx-auto px-65 d-flex align-items-center">
+            <!-- Only Desktop Show Image -->
+            <img
+              src="assets/images/ceo/ceo-shape.png"
+              alt="ceo-shape"
+              class="ceo-shape d-none d-lg-inline-block"
+            />
+            <!-- Only Tablet Show Image -->
+            <img
+              src="assets/images/ceo/ceo-shape2.png"
+              alt="ceo-shape"
+              class="ceo-shape d-inline-block d-lg-none"
+            />
             <!----- Start row ----->
             <div class="row g-5 align-items-center">
               <article class="col-lg-9">
                 <div class="ceo-desc text-center text-lg-start mb-5 mb-lg-0">
                   <p class="ceo-desc-text primary-font-500 size-lg third-color">
-                    The user interface also looks simple so that it makes it
-                    easier for uers, that is also very helful regarding problems
+                    <span class="quoe-left primary-font-500 size-lg third-color"
+                      >The</span
+                    >
+                    user interface also looks simple so that it makes it easier
+                    for uers, that is also very helful regarding
+                    <span
+                      class="quoe-right primary-font-500 size-lg third-color"
+                      >problems</span
+                    >
                   </p>
                 </div>
               </article>
@@ -694,24 +670,21 @@
                   <div class="row g-5 align-items-center">
                     <!---- Peicing Inner Tab BTN ---->
                     <article class="col-lg-6 col-md-7">
-                      <div class="pricing-btn-area">
-                        <div class="pricing-btn-parrent">
+                      <div class="pricing-btn-area" id="myDIV">
+                        <div class="pricing-btn-parrent active">
                           <button
-                            class="pricing-btn px-30 py-30 d-flex flex-wrap align-items-center justify-content-between w-100 border"
+                            class="pricing-btn px-30 d-flex flex-wrap align-items-center justify-content-between w-100 border"
                           >
                             <p class="size-lg primary-font-600 secondary-color">
                               Free
                             </p>
                             <p class="">Upto <span>2,000</span> images</p>
-                            <img
-                              src="assets/images/pricing/gray-circle.svg"
-                              alt="gray-circle"
-                            />
+                            <div class="pricing-circle-box"></div>
                           </button>
                         </div>
                         <div class="pricing-btn-parrent">
                           <button
-                            class="pricing-btn px-30 py-30 d-flex flex-wrap align-items-center justify-content-between w-100 border"
+                            class="pricing-btn px-30 d-flex flex-wrap align-items-center justify-content-between w-100 border"
                           >
                             <div>
                               <p
@@ -722,15 +695,12 @@
                               <p class="text-start">/ month</p>
                             </div>
                             <p class="">Upto 2,000 images</p>
-                            <img
-                              src="assets/images/pricing/gray-circle.svg"
-                              alt="gray-circle"
-                            />
+                            <div class="pricing-circle-box"></div>
                           </button>
                         </div>
                         <div class="pricing-btn-parrent">
                           <button
-                            class="pricing-btn px-30 py-30 d-flex flex-wrap align-items-center justify-content-between w-100 border"
+                            class="pricing-btn px-30 d-flex flex-wrap align-items-center justify-content-between w-100 border"
                           >
                             <div>
                               <p
@@ -741,15 +711,12 @@
                               <p class="text-start">/ month</p>
                             </div>
                             <p class="">Upto 2,000 images</p>
-                            <img
-                              src="assets/images/pricing/gray-circle.svg"
-                              alt="gray-circle"
-                            />
+                            <div class="pricing-circle-box"></div>
                           </button>
                         </div>
                         <div class="pricing-btn-parrent">
                           <button
-                            class="pricing-btn px-30 py-30 d-flex flex-wrap align-items-center justify-content-between w-100 border"
+                            class="pricing-btn px-30 d-flex flex-wrap align-items-center justify-content-between w-100 border"
                           >
                             <div>
                               <p
@@ -760,17 +727,14 @@
                               <p class="text-start">/ month</p>
                             </div>
                             <p class="">Upto 2,000 images</p>
-                            <img
-                              src="assets/images/pricing/gray-circle.svg"
-                              alt="gray-circle"
-                            />
+                            <div class="pricing-circle-box"></div>
                           </button>
                         </div>
                         <div
                           class="pricing-btn-parrent show-more-plans-content"
                         >
                           <button
-                            class="pricing-btn px-30 py-30 d-flex flex-wrap align-items-center justify-content-between w-100 border"
+                            class="pricing-btn px-30 d-flex flex-wrap align-items-center justify-content-between w-100 border"
                           >
                             <div>
                               <p
@@ -781,17 +745,14 @@
                               <p class="text-start">/ month</p>
                             </div>
                             <p class="">Upto 2,000 images</p>
-                            <img
-                              src="assets/images/pricing/gray-circle.svg"
-                              alt="gray-circle"
-                            />
+                            <div class="pricing-circle-box"></div>
                           </button>
                         </div>
                         <div
                           class="pricing-btn-parrent show-more-plans-content"
                         >
                           <button
-                            class="pricing-btn px-30 py-30 d-flex flex-wrap align-items-center justify-content-between w-100 border"
+                            class="pricing-btn px-30 d-flex flex-wrap align-items-center justify-content-between w-100 border"
                           >
                             <div>
                               <p
@@ -802,17 +763,16 @@
                               <p class="text-start">/ month</p>
                             </div>
                             <p class="">Upto 2,000 images</p>
-                            <img
-                              src="assets/images/pricing/gray-circle.svg"
-                              alt="gray-circle"
-                            />
+                            <div class="pricing-circle-box"></div>
                           </button>
                         </div>
                         <button
                           type="button"
+                          id="show-more-plans"
                           class="show-more-plans-btn py-20 link-btn link-btn-2 d-block w-100"
                         >
-                          SHOW MORE PLANS
+                          <span class="show-more">show more plans</span>
+                          <span class="show-less">Show fewer plans</span>
                         </button>
                       </div>
                     </article>
@@ -872,10 +832,11 @@
                   <div class="row g-5">
                     <article class="col-12">
                       <div class="pricing-agency-top-text mb-50">
-                        <div class="agency-range">
+                        <div class="agency-progress">
                           <div class="monthly-spend-content">
                             <div class="monthly-spend-content-box1">
-                              <span class="third-color primary-font-500 d-block"
+                              <span
+                                class="third-color primary-font-500 d-block text-center"
                                 >Monthly Ad Spend</span
                               >
                             </div>
@@ -888,11 +849,16 @@
                               </h6>
                             </div>
                           </div>
+                          <div class="agency-bar">
+                            <div class="agency-fill"></div>
+                          </div>
                           <input
                             type="range"
+                            min="0"
+                            max="100"
                             value="50"
-                            steps="1"
-                            class="agency-range-field"
+                            step="1"
+                            id="agency-slider"
                           />
                         </div>
                         <div
@@ -940,7 +906,7 @@
                           >
                             <span
                               ><img
-                                src="assets/images/pricing/right.svg"
+                                src="assets/images/pricing/right-white.svg"
                                 alt="right"
                             /></span>
                             <span class="ms-15 size-xsm primary-font-400"
@@ -952,7 +918,7 @@
                           >
                             <span
                               ><img
-                                src="assets/images/pricing/right.svg"
+                                src="assets/images/pricing/right-white.svg"
                                 alt="right"
                             /></span>
                             <span class="ms-15 size-xsm primary-font-400"
@@ -964,7 +930,7 @@
                           >
                             <span
                               ><img
-                                src="assets/images/pricing/right.svg"
+                                src="assets/images/pricing/right-white.svg"
                                 alt="right"
                             /></span>
                             <span class="ms-15 size-xsm primary-font-400"
@@ -976,7 +942,7 @@
                           >
                             <span
                               ><img
-                                src="assets/images/pricing/right.svg"
+                                src="assets/images/pricing/right-white.svg"
                                 alt="right"
                             /></span>
                             <span class="ms-15 size-xsm primary-font-400"
@@ -988,7 +954,7 @@
                           >
                             <span
                               ><img
-                                src="assets/images/pricing/right.svg"
+                                src="assets/images/pricing/right-white.svg"
                                 alt="right"
                             /></span>
                             <span class="ms-15 size-xsm primary-font-400"
@@ -1000,7 +966,7 @@
                           >
                             <span
                               ><img
-                                src="assets/images/pricing/right.svg"
+                                src="assets/images/pricing/right-white.svg"
                                 alt="right"
                             /></span>
                             <span class="ms-15 size-xsm primary-font-400"
@@ -1012,7 +978,7 @@
                           >
                             <span
                               ><img
-                                src="assets/images/pricing/right.svg"
+                                src="assets/images/pricing/right-white.svg"
                                 alt="right"
                             /></span>
                             <span class="ms-15 size-xsm primary-font-400"
@@ -1024,7 +990,7 @@
                           >
                             <span
                               ><img
-                                src="assets/images/pricing/right.svg"
+                                src="assets/images/pricing/right-white.svg"
                                 alt="right"
                             /></span>
                             <span class="ms-15 size-xsm primary-font-400"
@@ -1036,7 +1002,7 @@
                           >
                             <span
                               ><img
-                                src="assets/images/pricing/right.svg"
+                                src="assets/images/pricing/right-white.svg"
                                 alt="right"
                             /></span>
                             <span class="ms-15 size-xsm primary-font-400"
@@ -1048,7 +1014,7 @@
                           >
                             <span
                               ><img
-                                src="assets/images/pricing/right.svg"
+                                src="assets/images/pricing/right-white.svg"
                                 alt="right"
                             /></span>
                             <span class="ms-15 size-xsm primary-font-400"
@@ -1697,6 +1663,16 @@
                           </label>
                         </div>
                       </div>
+                      <div class="col-12">
+                        <div class="form-submit mt-45">
+                          <button
+                            type="submit"
+                            class="form-submit-btn link-btn link-btn-1 px-70"
+                          >
+                            GET 30 DAYS FREE TRIAL
+                          </button>
+                        </div>
+                      </div>
                     </div>
                   </form>
                 </div>
@@ -1717,274 +1693,339 @@
 	  Start Footer Section 
 	  =====================================================
 	-->
-    <footer class="footer-section py-100">
-      <div class="container">
-        <div class="footer-wrapper">
-          <!----- Start row ----->
-          <div class="row">
-            <article class="col-lg-4">
-              <div class="footer-logo mb-5 mb-lg-0 pb-5 pb-lg-0">
-                <div>
+    <footer class="footer-section">
+      <div class="container py-75">
+        <!----- Start row ----->
+        <div class="row">
+          <article class="col-lg-4">
+            <div class="footer-logo mb-5 mb-lg-0 pb-5 pb-lg-0">
+              <div>
+                <img
+                  src="assets/images/footer-logo.png"
+                  alt="footer-logo"
+                  class="img-fluid mb-40"
+                />
+              </div>
+              <a href="#" class="link-btn px-60">BOOK A DEMO</a>
+            </div>
+          </article>
+          <article class="col-lg-2 col-md-3 col-6 my-5 my-lg-0 py-5 py-lg-0">
+            <div class="footer-link">
+              <p class="primar-font-600 third-color mb-25">Product</p>
+              <ul class="footer-link-list">
+                <li class="link-list-item">
+                  <a
+                    href="#"
+                    class="primary-font-400 third-color text-capitalize"
+                    >Product Tour</a
+                  >
+                </li>
+                <li class="link-list-item">
+                  <a
+                    href="#"
+                    class="primary-font-400 third-color text-capitalize"
+                    >Pricing</a
+                  >
+                </li>
+                <li class="link-list-item">
+                  <a
+                    href="#"
+                    class="primary-font-400 third-color text-capitalize"
+                    >Pitch Decks</a
+                  >
+                </li>
+                <li class="link-list-item">
+                  <a
+                    href="#"
+                    class="primary-font-400 third-color text-capitalize"
+                    >Sales Decks</a
+                  >
+                </li>
+                <li class="link-list-item">
+                  <a
+                    href="#"
+                    class="primary-font-400 third-color text-capitalize"
+                    >Team Meetings</a
+                  >
+                </li>
+                <li class="link-list-item">
+                  <a
+                    href="#"
+                    class="primary-font-400 third-color text-capitalize"
+                    >Presentation Maker</a
+                  >
+                </li>
+                <li class="link-list-item">
+                  <a
+                    href="#"
+                    class="primary-font-400 third-color text-capitalize"
+                    >What’s New</a
+                  >
+                </li>
+                <li class="link-list-item">
+                  <a
+                    href="#"
+                    class="primary-font-400 third-color text-capitalize"
+                    >Download</a
+                  >
+                </li>
+                <li class="link-list-item">
+                  <a
+                    href="#"
+                    class="primary-font-400 third-color text-capitalize"
+                    >Help Center</a
+                  >
+                </li>
+                <li class="link-list-item">
+                  <a
+                    href="#"
+                    class="primary-font-400 third-color text-capitalize"
+                    >Status</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </article>
+          <article class="col-lg-2 col-md-3 col-6 my-5 my-lg-0 py-5 py-lg-0">
+            <div class="footer-link">
+              <p class="primar-font-600 third-color mb-25">Templates</p>
+              <ul class="footer-link-list">
+                <li class="link-list-item">
+                  <a
+                    href="#"
+                    class="primary-font-400 third-color text-capitalize"
+                    >Pitch Decks</a
+                  >
+                </li>
+                <li class="link-list-item">
+                  <a
+                    href="#"
+                    class="primary-font-400 third-color text-capitalize"
+                    >Marketing</a
+                  >
+                </li>
+                <li class="link-list-item">
+                  <a
+                    href="#"
+                    class="primary-font-400 third-color text-capitalize"
+                    >Sartups</a
+                  >
+                </li>
+                <li class="link-list-item">
+                  <a
+                    href="#"
+                    class="primary-font-400 third-color text-capitalize"
+                    >Design</a
+                  >
+                </li>
+                <li class="link-list-item">
+                  <a
+                    href="#"
+                    class="primary-font-400 third-color text-capitalize"
+                    >Proposals</a
+                  >
+                </li>
+                <li class="link-list-item">
+                  <a
+                    href="#"
+                    class="primary-font-400 third-color text-capitalize"
+                    >Reports</a
+                  >
+                </li>
+                <li class="link-list-item">
+                  <a
+                    href="#"
+                    class="primary-font-400 third-color text-capitalize"
+                    >Simple</a
+                  >
+                </li>
+                <li class="link-list-item">
+                  <a
+                    href="#"
+                    class="primary-font-400 third-color text-capitalize"
+                    >Creative</a
+                  >
+                </li>
+                <li class="link-list-item">
+                  <a
+                    href="#"
+                    class="primary-font-400 third-color text-capitalize"
+                    >Professional</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </article>
+          <article class="col-lg-2 col-md-3 col-6">
+            <div class="footer-link">
+              <p class="primar-font-600 third-color mb-25">Legal</p>
+              <ul class="footer-link-list">
+                <li class="link-list-item">
+                  <a href="#" class="primary-font-400 third-color"
+                    >Terms of Use</a
+                  >
+                </li>
+                <li class="link-list-item">
+                  <a
+                    href="#"
+                    class="primary-font-400 third-color text-capitalize"
+                    >Privacy Policy</a
+                  >
+                </li>
+                <li class="link-list-item">
+                  <a
+                    href="#"
+                    class="primary-font-400 third-color text-capitalize"
+                    >Legal Notice</a
+                  >
+                </li>
+                <li class="link-list-item">
+                  <a
+                    href="#"
+                    class="primary-font-400 third-color text-uppercase"
+                    >DPA</a
+                  >
+                </li>
+                <li class="link-list-item">
+                  <a href="#" class="primary-font-400 third-color"
+                    >DMCA Policy</a
+                  >
+                </li>
+                <li class="link-list-item">
+                  <a href="#" class="primary-font-400 third-color"
+                    >ERDF Support</a
+                  >
+                </li>
+                <li class="link-list-item">
+                  <a href="#" class="primary-font-400 third-color">GDPR</a>
+                </li>
+                <li class="link-list-item">
+                  <a
+                    href="#"
+                    class="primary-font-400 third-color text-capitalize"
+                    >Security Policy</a
+                  >
+                </li>
+                <li class="link-list-item">
+                  <a
+                    href="#"
+                    class="primary-font-400 third-color text-capitalize"
+                    >Cookie Settings</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </article>
+          <article class="col-lg-2 col-md-3 col-6">
+            <div class="footer-link">
+              <p class="primar-font-600 third-color mb-25">Company</p>
+              <ul class="footer-link-list">
+                <li class="link-list-item">
+                  <a
+                    href="#"
+                    class="primary-font-400 third-color text-capitalize"
+                    >About</a
+                  >
+                </li>
+                <li class="link-list-item">
+                  <a
+                    href="#"
+                    class="primary-font-400 third-color text-capitalize"
+                    >Job</a
+                  >
+                </li>
+                <li class="link-list-item">
+                  <a
+                    href="#"
+                    class="primary-font-400 third-color text-capitalize"
+                    >Press Room</a
+                  >
+                </li>
+                <li class="link-list-item">
+                  <a
+                    href="#"
+                    class="primary-font-400 third-color text-capitalize"
+                    >Blog</a
+                  >
+                </li>
+                <li class="link-list-item">
+                  <a
+                    href="#"
+                    class="primary-font-400 third-color text-capitalize"
+                    >Community</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </article>
+        </div>
+        <!------ End row ------>
+      </div>
+      <div class="sub-footer">
+        <div class="container">
+          <div class="row g-5 align-items-center">
+            <div class="col-xl-4 col-lg-4 col-md-5">
+              <div
+                class="languege d-flex justify-content-center justify-content-md-start"
+              >
+                <select class="languege-select">
+                  <option data-display="Español (España)">
+                    Español (España)
+                  </option>
+                  <option value="1">Español</option>
+                  <option value="2">Español</option>
+                  <option value="3">Español</option>
+                  <option value="4">Español</option>
+                  <option value="5">Español</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-xl-4 col-lg-5 col-md-7">
+              <div class="sub-footer-text text-center pt-5 pt-md-0">
+                <p class="third-color">
+                  @ 2022 Todos los derechos reservados, Canva
+                </p>
+                <p class="third-color">Politica de privacidad l Condiciones</p>
+              </div>
+            </div>
+            <div class="col-xl-4 col-lg-3">
+              <div
+                class="sub-footer-social d-flex align-items-center justify-content-center pt-5 pt-lg-0"
+              >
+                <a
+                  href="#"
+                  class="sub-footer-social-link d-flex justify-content-center align-items-center"
+                >
+                  <img src="assets/images/footer/facebook.svg" alt="facebook" />
+                </a>
+                <a
+                  href="#"
+                  class="sub-footer-social-link d-flex justify-content-center align-items-center"
+                >
+                  <img src="assets/images/footer/twitter.svg" alt="twitter" />
+                </a>
+                <a
+                  href="#"
+                  class="sub-footer-social-link d-flex justify-content-center align-items-center"
+                >
                   <img
-                    src="assets/images/footer-logo.png"
-                    alt="footer-logo"
-                    class="img-fluid mb-40"
+                    src="assets/images/footer/instagram.svg"
+                    alt="instagram"
                   />
-                </div>
-                <a href="#" class="link-btn link-btn-1 px-45">BOOK A DEMO</a>
+                </a>
+                <a
+                  href="#"
+                  class="sub-footer-social-link d-flex justify-content-center align-items-center"
+                >
+                  <img
+                    src="assets/images/footer/pinterest.svg"
+                    class="pinterest"
+                    alt="pinterest"
+                  />
+                </a>
               </div>
-            </article>
-            <article class="col-lg-2 col-md-3 col-6 my-5 my-lg-0 py-5 py-lg-0">
-              <div class="footer-link">
-                <p class="primar-font-600 third-color mb-25">Product</p>
-                <ul class="footer-link-list">
-                  <li class="link-list-item">
-                    <a
-                      href="#"
-                      class="primary-font-400 third-color text-capitalize"
-                      >Product Tour</a
-                    >
-                  </li>
-                  <li class="link-list-item">
-                    <a
-                      href="#"
-                      class="primary-font-400 third-color text-capitalize"
-                      >Pricing</a
-                    >
-                  </li>
-                  <li class="link-list-item">
-                    <a
-                      href="#"
-                      class="primary-font-400 third-color text-capitalize"
-                      >Pitch Decks</a
-                    >
-                  </li>
-                  <li class="link-list-item">
-                    <a
-                      href="#"
-                      class="primary-font-400 third-color text-capitalize"
-                      >Sales Decks</a
-                    >
-                  </li>
-                  <li class="link-list-item">
-                    <a
-                      href="#"
-                      class="primary-font-400 third-color text-capitalize"
-                      >Team Meetings</a
-                    >
-                  </li>
-                  <li class="link-list-item">
-                    <a
-                      href="#"
-                      class="primary-font-400 third-color text-capitalize"
-                      >Presentation Maker</a
-                    >
-                  </li>
-                  <li class="link-list-item">
-                    <a
-                      href="#"
-                      class="primary-font-400 third-color text-capitalize"
-                      >What’s New</a
-                    >
-                  </li>
-                  <li class="link-list-item">
-                    <a
-                      href="#"
-                      class="primary-font-400 third-color text-capitalize"
-                      >Download</a
-                    >
-                  </li>
-                  <li class="link-list-item">
-                    <a
-                      href="#"
-                      class="primary-font-400 third-color text-capitalize"
-                      >Help Center</a
-                    >
-                  </li>
-                  <li class="link-list-item">
-                    <a
-                      href="#"
-                      class="primary-font-400 third-color text-capitalize"
-                      >Status</a
-                    >
-                  </li>
-                </ul>
-              </div>
-            </article>
-            <article class="col-lg-2 col-md-3 col-6 my-5 my-lg-0 py-5 py-lg-0">
-              <div class="footer-link">
-                <p class="primar-font-600 third-color mb-25">Templates</p>
-                <ul class="footer-link-list">
-                  <li class="link-list-item">
-                    <a
-                      href="#"
-                      class="primary-font-400 third-color text-capitalize"
-                      >Pitch Decks</a
-                    >
-                  </li>
-                  <li class="link-list-item">
-                    <a
-                      href="#"
-                      class="primary-font-400 third-color text-capitalize"
-                      >Marketing</a
-                    >
-                  </li>
-                  <li class="link-list-item">
-                    <a
-                      href="#"
-                      class="primary-font-400 third-color text-capitalize"
-                      >Sartups</a
-                    >
-                  </li>
-                  <li class="link-list-item">
-                    <a
-                      href="#"
-                      class="primary-font-400 third-color text-capitalize"
-                      >Design</a
-                    >
-                  </li>
-                  <li class="link-list-item">
-                    <a
-                      href="#"
-                      class="primary-font-400 third-color text-capitalize"
-                      >Proposals</a
-                    >
-                  </li>
-                  <li class="link-list-item">
-                    <a
-                      href="#"
-                      class="primary-font-400 third-color text-capitalize"
-                      >Reports</a
-                    >
-                  </li>
-                  <li class="link-list-item">
-                    <a
-                      href="#"
-                      class="primary-font-400 third-color text-capitalize"
-                      >Simple</a
-                    >
-                  </li>
-                  <li class="link-list-item">
-                    <a
-                      href="#"
-                      class="primary-font-400 third-color text-capitalize"
-                      >Creative</a
-                    >
-                  </li>
-                  <li class="link-list-item">
-                    <a
-                      href="#"
-                      class="primary-font-400 third-color text-capitalize"
-                      >Professional</a
-                    >
-                  </li>
-                </ul>
-              </div>
-            </article>
-            <article class="col-lg-2 col-md-3 col-6">
-              <div class="footer-link">
-                <p class="primar-font-600 third-color mb-25">Legal</p>
-                <ul class="footer-link-list">
-                  <li class="link-list-item">
-                    <a href="#" class="primary-font-400 third-color"
-                      >Terms of Use</a
-                    >
-                  </li>
-                  <li class="link-list-item">
-                    <a
-                      href="#"
-                      class="primary-font-400 third-color text-capitalize"
-                      >Privacy Policy</a
-                    >
-                  </li>
-                  <li class="link-list-item">
-                    <a
-                      href="#"
-                      class="primary-font-400 third-color text-capitalize"
-                      >Legal Notice</a
-                    >
-                  </li>
-                  <li class="link-list-item">
-                    <a
-                      href="#"
-                      class="primary-font-400 third-color text-uppercase"
-                      >DPA</a
-                    >
-                  </li>
-                  <li class="link-list-item">
-                    <a href="#" class="primary-font-400 third-color"
-                      >DMCA Policy</a
-                    >
-                  </li>
-                  <li class="link-list-item">
-                    <a href="#" class="primary-font-400 third-color"
-                      >ERDF Support</a
-                    >
-                  </li>
-                  <li class="link-list-item">
-                    <a href="#" class="primary-font-400 third-color">GDPR</a>
-                  </li>
-                  <li class="link-list-item">
-                    <a
-                      href="#"
-                      class="primary-font-400 third-color text-capitalize"
-                      >Security Policy</a
-                    >
-                  </li>
-                  <li class="link-list-item">
-                    <a
-                      href="#"
-                      class="primary-font-400 third-color text-capitalize"
-                      >Cookie Settings</a
-                    >
-                  </li>
-                </ul>
-              </div>
-            </article>
-            <article class="col-lg-2 col-md-3 col-6">
-              <div class="footer-link">
-                <p class="primar-font-600 third-color mb-25">Company</p>
-                <ul class="footer-link-list">
-                  <li class="link-list-item">
-                    <a
-                      href="#"
-                      class="primary-font-400 third-color text-capitalize"
-                      >About</a
-                    >
-                  </li>
-                  <li class="link-list-item">
-                    <a
-                      href="#"
-                      class="primary-font-400 third-color text-capitalize"
-                      >Job</a
-                    >
-                  </li>
-                  <li class="link-list-item">
-                    <a
-                      href="#"
-                      class="primary-font-400 third-color text-capitalize"
-                      >Press Room</a
-                    >
-                  </li>
-                  <li class="link-list-item">
-                    <a
-                      href="#"
-                      class="primary-font-400 third-color text-capitalize"
-                      >Blog</a
-                    >
-                  </li>
-                  <li class="link-list-item">
-                    <a
-                      href="#"
-                      class="primary-font-400 third-color text-capitalize"
-                      >Community</a
-                    >
-                  </li>
-                </ul>
-              </div>
-            </article>
+            </div>
           </div>
-          <!------ End row ------>
         </div>
       </div>
     </footer>
@@ -2015,7 +2056,7 @@
 
     <!--------- jS Here --------->
     <script src="assets/js/jquery-3.6.0.min.js"></script>
-    <script src="assets/js/index.umd.js"></script>
+    <script src="assets/js/jquery.nice-select.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/swiper-bundle.min.js"></script>
     <script src="assets/js/main.js"></script>

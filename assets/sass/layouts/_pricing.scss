@@ -17,34 +17,32 @@ Start Pricing Section
       color: #989898;
       padding: 16px 0;
       background-color: #f9f9f9;
-      &.active {
-        background: $btn-bg;
+      &.actives {
+        background: #4983c3;
         color: $third-color;
+      }
+      @media (max-width: 575px) {
+        min-width: 220px;
+      }
+      @media (max-width: 460px) {
+        min-width: 200px;
+      }
+      @media (max-width: 420px) {
+        min-width: 180px;
+      }
+      @media (max-width: 380px) {
+        min-width: 220px;
+      }
+      @media (max-width: 380px) {
+        &:not(:last-child) {
+          margin-bottom: 15px;
+        }
       }
     }
     @media (max-width: 575px) {
-      .pricing-tablinks {
-        min-width: 220px;
-      }
-    }
-    @media (max-width: 460px) {
-      .pricing-tablinks {
-        min-width: 200px;
-      }
-    }
-    @media (max-width: 420px) {
-      .pricing-tablinks {
-        min-width: 180px;
-      }
+      margin-bottom: 50px;
     }
     @media (max-width: 380px) {
-      .pricing-tablinks {
-        min-width: 220px;
-      }
-    }
-  }
-  @media (max-width: 380px) {
-    .pricing-tab {
       flex-direction: column !important;
       background-color: transparent;
     }
@@ -77,21 +75,71 @@ Start Pricing Section
         .pricing-btn-parrent {
           margin-bottom: 20px;
           .pricing-btn {
+            margin-bottom: 20px;
+            min-height: 100px;
             border: 1px solid #9a9a9a;
             border-radius: 7px;
             -webkit-border-radius: 7px;
             -moz-border-radius: 7px;
             -ms-border-radius: 7px;
             -o-border-radius: 7px;
-          }
-          @media (max-width: 450px) {
-            .pricing-btn {
+            .pricing-circle-box {
+              position: relative;
+              width: 24px;
+              height: 24px;
+              border: 2px solid #9a9a9a;
+              border-radius: 50%;
+              -webkit-border-radius: 50%;
+              -moz-border-radius: 50%;
+              -ms-border-radius: 50%;
+              -o-border-radius: 50%;
+            }
+            @media (max-width: 450px) {
               padding: 15px 8px;
             }
           }
         }
         .show-more-plans-content {
           display: none;
+        }
+        .active {
+          .pricing-btn {
+            border-color: #4a6ab7 !important;
+            p {
+              color: #4a6ab7;
+            }
+            .pricing-circle-box {
+              border-color: #4a6ab7 !important;
+              &::after {
+                content: "";
+                background: url("../images/pricing/right-blue.svg") no-repeat
+                  center / 12px;
+                width: 12px;
+                height: 10px;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                -webkit-transform: translate(-50%, -50%);
+                -moz-transform: translate(-50%, -50%);
+                -ms-transform: translate(-50%, -50%);
+                -o-transform: translate(-50%, -50%);
+              }
+            }
+          }
+        }
+        #show-more-plans {
+          .show-less {
+            display: none;
+          }
+          &.showing-less {
+            .show-less {
+              display: block;
+            }
+            .show-more {
+              display: none;
+            }
+          }
         }
       }
       .pricing-right-content {
@@ -105,12 +153,11 @@ Start Pricing Section
     }
     .pricing-agency-top-text {
       margin-top: 215px;
-      .agency-range {
+      .agency-progress {
         position: relative;
         .monthly-spend-content {
           width: 326px;
           position: absolute;
-          /* top: -1355%; */
           top: -218px;
           left: 50%;
           transform: translateX(-50%);
@@ -152,46 +199,66 @@ Start Pricing Section
             background-color: #f9f9fb;
             box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
           }
-        }
-        @media (max-width: 400px) {
-          .monthly-spend-content {
+          @media (max-width: 575px) {
+            top: -200px;
+          }
+          @media (max-width: 400px) {
             width: 300px;
           }
         }
-        .agency-range-field {
+        .agency-bar {
+          position: absolute;
+          width: 100%;
+          height: 12px;
+          border-radius: 90px;
+          background: #2f2f2f;
+          box-shadow: 0px 14px 34px rgba(74, 106, 183, 0.34);
+          left: 0;
+          z-index: 1;
+          overflow: hidden;
+          .agency-fill {
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: linear-gradient(
+              105.58deg,
+              #4982c3 40.51%,
+              #49bac4 93.8%
+            );
+            width: 0;
+            height: 100%;
+          }
+        }
+        #agency-slider {
           -webkit-appearance: none;
           width: 100%;
           height: 12px;
-          background: #2f2f2f;
-          border-radius: 5px;
-          outline: none;
-          border: none;
-          z-index: 2222;
-        }
-        .agency-range-field::-webkit-slider-thumb {
-          -webkit-appearance: none;
-          width: 36px;
-          height: 36px;
-          border-radius: 50%;
-          background: #fff;
-          border: 7px solid #4a6ab7;
+          background: transparent;
+          border-radius: 90px;
+          outline: 0;
+          position: relative;
+          z-index: 2;
           cursor: pointer;
+        }
+        #agency-slider::-webkit-slider-thumb,
+        #agency-slider1::-webkit-slider-thumb {
+          -webkit-appearance: none;
+          width: 39px;
+          height: 39px;
+          background: #fff;
+          border-radius: 50%;
+          border: 8px solid #4a6ab7;
           box-shadow: 0px 8px 34px rgba(74, 106, 183, 0.2);
         }
-        .agency-range-field::-moz-range-thumb {
+        #agency-slider::-moz-range-thumb,
+        #agency-slider1::-moz-range-thumb {
           -webkit-appearance: none;
-          width: 36px;
-          height: 36px;
-          border-radius: 50%;
+          width: 39px;
+          height: 39px;
           background: #fff;
-          border: 7px solid #4a6ab7;
-          cursor: pointer;
+          border-radius: 50%;
+          border: 8px solid #4a6ab7;
           box-shadow: 0px 8px 34px rgba(74, 106, 183, 0.2);
-        }
-        .agency-range-field::-moz-range-progress {
-          /* background color not supported in chrome browser */
-          background: linear-gradient(#4a6ab7, #49bac4);
-          height: 12px;
         }
       }
       .agency-range-text {
@@ -201,9 +268,7 @@ Start Pricing Section
           box-shadow: 10px 14px 34px rgba(74, 106, 183, 0.12);
           border-radius: 30px;
         }
-      }
-      @media (max-width: 575px) {
-        .agency-range-text {
+        @media (max-width: 575px) {
           flex-wrap: wrap !important;
           justify-content: flex-start !important;
           p {
@@ -236,7 +301,6 @@ Start Pricing Section
     }
   }
 }
-
 /* 
 ====================================================
 End Pricing Section

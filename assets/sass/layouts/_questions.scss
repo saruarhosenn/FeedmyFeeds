@@ -82,6 +82,9 @@ Start Questions Section
     will-change: opacity, max-height;
     .faq-accordion-content-box {
       padding-bottom: 30px;
+      p {
+        opacity: 0.7;
+      }
     }
   }
 }
