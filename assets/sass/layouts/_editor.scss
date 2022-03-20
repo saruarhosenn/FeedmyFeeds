@@ -16,10 +16,29 @@ Start Editor Section
     }
   }
   .editor-text {
+    position: relative;
+    z-index: 11;
     max-width: 469px;
     @media (max-width: 767px) {
       max-width: 100%;
       margin-bottom: 15px;
+    }
+    .editor-shape {
+      position: absolute;
+      top: 35px;
+      right: -70px;
+      z-index: 1;
+      @media (max-width: 991px) {
+        right: -145px;
+      }
+      @media (max-width: 767px) {
+        max-width: 170px;
+        right: -60px;
+      }
+      @media (max-width: 575px) {
+        max-width: 148px;
+        right: -30px;
+      }
     }
   }
 }

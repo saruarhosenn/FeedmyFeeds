@@ -11,10 +11,13 @@ Start Header SEction
   left: 0;
   width: 100%;
   z-index: 9999;
+  @media (max-width: 991px) {
+    top: 25px;
+  }
   .menu-wrapper {
     @media (max-width: 1199px) {
       .logo {
-        max-width: 180px;
+        max-width: 170px;
       }
     }
     @media (max-width: 991px) {
@@ -89,19 +92,32 @@ Start Header SEction
           color: $third-color;
           background: $btn-bg;
           border-color: transparent;
+          @media (max-width: 991px) {
+            background: $secondary-color;
+          }
+        }
+        @media (max-width: 1199px) {
+          padding-left: 15px;
+          padding-right: 15px;
         }
         @media (max-width: 991px) {
           color: $third-color;
           border-color: $third-color;
           margin-bottom: 20px;
+          padding-left: 23.5px;
+          padding-right: 23.5px;
         }
       }
       .nav-btn-2 {
         box-shadow: none;
         padding: 9px 23.5px;
+        @media (max-width: 1199px) {
+          padding-left: 15px;
+          padding-right: 15px;
+        }
         @media (max-width: 991px) {
-          padding-top: 15px;
-          padding-bottom: 15px;
+          padding: 15px 23.5px;
+          background: $secondary-color;
         }
       }
     }
@@ -132,9 +148,9 @@ Start Header SEction
         &::-webkit-scrollbar {
           display: none;
         }
-      }
-      @media (max-width: 365px) {
-        width: 100%;
+        @media (max-width: 365px) {
+          width: 100%;
+        }
       }
     }
     @media (max-width: 1199px) {

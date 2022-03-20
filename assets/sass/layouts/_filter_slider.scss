@@ -17,8 +17,10 @@ Start Filter Slider Section
       .slider-tab {
         .slider-tab-btn {
           background: $third-color;
-          margin: 20px;
           cursor: pointer;
+          @media (max-width: 767px) {
+            margin: 6px;
+          }
         }
       }
       .panels {

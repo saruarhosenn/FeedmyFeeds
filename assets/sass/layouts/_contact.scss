@@ -9,6 +9,25 @@ Start Contact Section
   background: no-repeat top / cover;
   .contact-wrapper {
     max-width: 920px;
+    .contact-sec-title {
+      position: relative;
+      z-index: 11;
+      .contact-shape {
+        position: absolute;
+        top: -83px;
+        left: -98px;
+        z-index: 1;
+        @media (max-width: 1199px) {
+          top: -50px;
+          left: -30px;
+        }
+        @media (max-width: 991px) {
+          max-width: 169px;
+          top: -10px;
+          left: -10px;
+        }
+      }
+    }
     .contact-form-wrapper {
       max-width: 730px;
       padding: 27px 25px 50px;
@@ -41,11 +60,17 @@ Start Contact Section
           }
         }
         .form-submit {
+          text-align: center;
           .form-submit-btn {
             box-shadow: none;
             @media (max-width: 575px) {
               padding-right: 60px;
               padding-left: 60px;
+            }
+            @media (max-width: 450px) {
+              width: 100%;
+              padding-right: 30px;
+              padding-left: 30px;
             }
           }
         }

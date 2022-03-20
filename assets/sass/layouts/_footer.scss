@@ -14,6 +14,10 @@ Start Footer Section
         background-color: #4a6ab7;
         border-color: transparent;
       }
+      @media (max-width: 575px) {
+        padding-left: 30px;
+        padding-right: 30px;
+      }
     }
   }
   .footer-link {
@@ -58,22 +62,22 @@ Start Footer Section
         border-color: inherit;
       }
       &::after {
-          border: 0;
-          background: url("../images/footer/arrow-up.svg") no-repeat center / 12px;
-          width: 12px; 
-          height: 7px;
-          top: 57%;
-          right: 20px;
-          -webkit-transform: rotate(0deg);
+        border: 0;
+        background: url("../images/footer/arrow-up.svg") no-repeat center / 12px;
+        width: 12px;
+        height: 7px;
+        top: 57%;
+        right: 20px;
+        -webkit-transform: rotate(0deg);
         -ms-transform: rotate(0deg);
         transform: rotate(0deg);
       }
       &.open:after {
-          top: 50%;
+        top: 50%;
         -webkit-transform: rotate(-180deg);
         -ms-transform: rotate(-180deg);
         transform: rotate(-180deg);
-    }
+      }
       &::before {
         content: "";
         background: url("../images/footer/world.svg") no-repeat center / 24px;
