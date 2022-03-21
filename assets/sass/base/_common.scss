@@ -172,14 +172,14 @@ Section Top & Bottom Padding
 .sec-pt-100 {
   padding-top: 100px;
   @media (max-width: 575px) {
-    padding-top: 50px;
+    padding-top: 45px;
   }
 }
 
 .sec-pb-100 {
   padding-bottom: 100px;
   @media (max-width: 575px) {
-    padding-bottom: 50px;
+    padding-bottom: 45px;
   }
 }
 
@@ -187,8 +187,8 @@ Section Top & Bottom Padding
   padding-top: 100px;
   padding-bottom: 100px;
   @media (max-width: 575px) {
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 45px;
+    padding-bottom: 45px;
   }
 }
 

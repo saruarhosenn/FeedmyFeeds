@@ -60,14 +60,9 @@ Start Contact Section
           }
         }
         .form-submit {
-          text-align: center;
           .form-submit-btn {
             box-shadow: none;
             @media (max-width: 575px) {
-              padding-right: 60px;
-              padding-left: 60px;
-            }
-            @media (max-width: 450px) {
               width: 100%;
               padding-right: 30px;
               padding-left: 30px;

@@ -7,6 +7,16 @@ Start Pricing Section
 */
 .pricing-wrapper {
   max-width: 973px;
+  @media (max-width: 767px) {
+    .pricing-sec-tittle {
+      margin-bottom: 50px;
+    }
+  }
+  @media (max-width: 575px) {
+    .pricing-sec-tittle {
+      margin-bottom: 25px;
+    }
+  }
   .pricing-tab {
     padding: 4px;
     max-width: 536px;

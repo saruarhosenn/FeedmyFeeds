@@ -144,12 +144,12 @@
           <div class="hero-wrapper mx-auto">
             <div class="row g-5 align-items-center">
               <article class="col-lg-6">
-                <div class="hero-text text-center text-lg-start">
+                <div class="hero-text hero-dark-banner-text text-center text-lg-start">
                   <h1 class="hero-title text-capitalize">
                     Start to <span class="typeText"></span> <br />
                     your ads
                   </h1>
-                  <p class="hero-desc hero-desc1 mt-15 mb-30">
+                  <p class="hero-desc hero-dark-banner-desc mt-15 mb-30">
                     Tool for agencies and brands to improve their creatives from
                     their catalog of products and services for dynamic ads.
                   </p>
@@ -166,11 +166,18 @@
                 </div>
               </article>
               <article class="col-lg-6">
-                <div class="hero-img">
+                <div class="hero-img hero-dark-banner-img text-center text-lg-start">
+                  <!-- Show Image Only Desktope Screen -->
                   <img
                     src="assets/images/hero/hero-img.png"
                     alt="hero-img"
-                    class="hero-main-img"
+                    class="hero-main-img d-none d-lg-inline-block"
+                  />
+                  <!-- Show Image Only Mobile, SM, MD Screen -->
+                  <img
+                    src="assets/images/hero/hero-mobile-img.png"
+                    alt="hero-img"
+                    class="hero-dark-banner-main-img img-fluid d-inline-block d-lg-none"
                   />
                 </div>
               </article>
@@ -239,15 +246,15 @@
       <!-- End Hero Dark Banner -->
 
       <!-- Start Hero Light Banner -->
-      <!-- <section
-        class="hero-section"
+      <section
+        class="hero-section hero-light-bg d-none"
         style="background-image: url('assets/images/hero/slider2.png')"
       >
         <div class="container">
           <div class="hero-wrapper mx-auto">
             <div class="row g-5 align-items-center">
               <article class="col-lg-6">
-                <div class="hero-text text-center text-lg-start">
+                <div class="hero-text hero-light-banner-text text-center text-lg-start">
                   <h1 class="hero-title third-color text-capitalize">
                     Start to <span class="typeText">Automate</span> <br />
                     your ads
@@ -258,7 +265,7 @@
                   </p>
                   <a
                     href="#"
-                    class="hero-btn hero-btn2 link-btn link-btn-2 primary-bg secondary-color d-flex align-items-center justify-content-between mx-auto mx-lg-0"
+                    class="hero-btn hero-light-banner-btn link-btn link-btn-2 primary-bg secondary-color d-flex align-items-center justify-content-between mx-auto mx-lg-0"
                   >
                     <span>BOOK A DEMO</span>
                     <img
@@ -269,12 +276,21 @@
                 </div>
               </article>
               <article class="col-lg-6">
-                <div class="hero-img">
+                <div class="hero-img hero-light-banner-img text-center text-lg-start">
+                  <!-- Show Image Only Desktope Screen -->
                   <img
                     src="assets/images/hero/hero-img2.png"
                     alt="hero-img"
-                    class="hero-main-img"
+                    class="hero-main-img d-none d-lg-inline-block"
                   />
+                  <!-- Show Image & Shape Only Mobile, SM, MD Screen -->
+                  <img src="assets/images/hero/light-banner-top-shape.png" alt="shape" class="hero-light-banner-top-shape d-inline-block d-lg-none">
+                  <img
+                    src="assets/images/hero/hero-mobile-img.png"
+                    alt="hero-img"
+                    class="hero-light-banner-main-img img-fluid d-inline-block d-lg-none"
+                  />
+                  <img src="assets/images/hero/light-banner-bottom-shape.png" alt="shape" class="hero-light-banner-bottom-shape d-inline-block d-lg-none">
                 </div>
               </article>
             </div>
@@ -338,7 +354,7 @@
             </div>
           </div>
         </div>
-      </section> -->
+      </section>
       <!-- End Hero Light Banner -->
       <!-- 
 		  =====================================================
@@ -1668,7 +1684,7 @@
                         </div>
                       </div>
                       <div class="col-12">
-                        <div class="form-submit mt-45">
+                        <div class="form-submit mt-45 text-center text-sm-start">
                           <button
                             type="submit"
                             class="form-submit-btn link-btn link-btn-1 px-70"

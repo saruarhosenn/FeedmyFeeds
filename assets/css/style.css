@@ -176,7 +176,7 @@ Section Top & Bottom Padding
 }
 @media (max-width: 575px) {
   .sec-pt-100 {
-    padding-top: 50px;
+    padding-top: 45px;
   }
 }
 
@@ -185,7 +185,7 @@ Section Top & Bottom Padding
 }
 @media (max-width: 575px) {
   .sec-pb-100 {
-    padding-bottom: 50px;
+    padding-bottom: 45px;
   }
 }
 
@@ -195,8 +195,8 @@ Section Top & Bottom Padding
 }
 @media (max-width: 575px) {
   .sec-py-100 {
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 45px;
+    padding-bottom: 45px;
   }
 }
 
@@ -521,14 +521,24 @@ End Header SEction
 ====================================================
 */
 /* 
-====================================================
+=============================================================================
 Start Hero SEction
-====================================================
+=============================================================================
 */
+/*==== Dark Banner & Light Banner Common Style ====*/
 .hero-section {
-  background: no-repeat top/cover;
   min-height: 100vh;
   padding: 280px 0 51px;
+}
+@media (max-width: 991px) {
+  .hero-section {
+    padding-top: 200px;
+  }
+}
+@media (max-width: 575px) {
+  .hero-section {
+    padding-top: 135px;
+  }
 }
 .hero-section .hero-wrapper {
   max-width: 1114px;
@@ -540,8 +550,10 @@ Start Hero SEction
 .hero-section .hero-wrapper .hero-text .hero-title span {
   text-decoration: underline;
 }
-.hero-section .hero-wrapper .hero-text .hero-desc1 {
-  color: #464646;
+@media (max-width: 575px) {
+  .hero-section .hero-wrapper .hero-text .hero-desc {
+    margin: 22px 0 19px;
+  }
 }
 .hero-section .hero-wrapper .hero-text .hero-btn {
   max-width: 253px;
@@ -554,9 +566,6 @@ Start Hero SEction
     padding-left: 30px;
     padding-right: 30px;
   }
-}
-.hero-section .hero-wrapper .hero-text .hero-btn2:hover {
-  color: #1e1e1e;
 }
 @media (max-width: 991px) {
   .hero-section .hero-wrapper .hero-text {
@@ -607,22 +616,13 @@ Start Hero SEction
     margin-top: 30px;
   }
 }
-@media (max-width: 991px) {
-  .hero-section {
-    padding-top: 200px;
-  }
-}
-@media (max-width: 575px) {
-  .hero-section {
-    padding-top: 150px;
-  }
-}
 
-/*===== Hero Dark Banner ======*/
+/*===== Hero Dark Banner Style ======*/
 .hero-dark-bg {
   position: relative;
   z-index: 1;
   background: linear-gradient(180deg, #4a9ac4 8.72%, rgba(255, 255, 255, 0.42) 100%) !important;
+  padding-bottom: 0px;
 }
 .hero-dark-bg .shape {
   position: absolute;
@@ -655,11 +655,56 @@ Start Hero SEction
     display: none;
   }
 }
+.hero-dark-bg .hero-dark-banner-text .hero-dark-banner-desc {
+  color: #464646;
+}
+@media (max-width: 991px) {
+  .hero-dark-bg .hero-dark-banner-img .hero-dark-banner-main-img {
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -38px;
+    margin-bottom: 5px;
+  }
+}
+
+/*===== Hero Light Banner Style ======*/
+.hero-light-bg {
+  background: no-repeat top/cover;
+}
+.hero-light-bg .hero-light-banner-text .hero-light-banner-btn:hover {
+  color: #1e1e1e;
+}
+.hero-light-bg .hero-light-banner-img {
+  max-width: 335px;
+  margin: 40px auto 36px !important;
+  position: relative;
+  z-index: 1;
+}
+.hero-light-bg .hero-light-banner-img .hero-light-banner-top-shape {
+  position: absolute;
+  top: -20px;
+  right: -20px;
+  z-index: -1;
+}
+@media (max-width: 370px) {
+  .hero-light-bg .hero-light-banner-img .hero-light-banner-top-shape {
+    height: 100px;
+  }
+}
+.hero-light-bg .hero-light-banner-img .hero-light-banner-bottom-shape {
+  position: absolute;
+  bottom: -20px;
+  left: -20px;
+  z-index: -1;
+}
+@media (max-width: 370px) {
+  .hero-light-bg .hero-light-banner-img .hero-light-banner-bottom-shape {
+    height: 100px;
+  }
+}
 
 /* 
-====================================================
+=============================================================================
 End Hero SEction
-====================================================
+=============================================================================
 */
 /* 
 ====================================================
@@ -1069,6 +1114,16 @@ Start Pricing Section
 .pricing-wrapper {
   max-width: 973px;
 }
+@media (max-width: 767px) {
+  .pricing-wrapper .pricing-sec-tittle {
+    margin-bottom: 50px;
+  }
+}
+@media (max-width: 575px) {
+  .pricing-wrapper .pricing-sec-tittle {
+    margin-bottom: 25px;
+  }
+}
 .pricing-wrapper .pricing-tab {
   padding: 4px;
   max-width: 536px;
@@ -1401,6 +1456,11 @@ Start Filter Slider Section
   padding-top: 50px;
   padding-bottom: 40px;
 }
+@media (max-width: 575px) {
+  .filter-slider-section .filter-slider-wrapper .slider-tab-area .panels .panel .filter-slider {
+    padding-top: 20px;
+  }
+}
 .filter-slider-section .filter-slider-wrapper .slider-tab-area .panels .panel .filter-slider .swiper-slide-shadow-left {
   background-image: none;
 }
@@ -1677,19 +1737,10 @@ Start Contact Section
   color: #2f2f2f;
   text-decoration: underline;
 }
-.contact-section .contact-wrapper .contact-form-wrapper .user-form-area .form-submit {
-  text-align: center;
-}
 .contact-section .contact-wrapper .contact-form-wrapper .user-form-area .form-submit .form-submit-btn {
   box-shadow: none;
 }
 @media (max-width: 575px) {
-  .contact-section .contact-wrapper .contact-form-wrapper .user-form-area .form-submit .form-submit-btn {
-    padding-right: 60px;
-    padding-left: 60px;
-  }
-}
-@media (max-width: 450px) {
   .contact-section .contact-wrapper .contact-form-wrapper .user-form-area .form-submit .form-submit-btn {
     width: 100%;
     padding-right: 30px;

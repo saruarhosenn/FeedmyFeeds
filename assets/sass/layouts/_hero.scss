@@ -1,14 +1,20 @@
 @import "../base/variables";
 
 /* 
-====================================================
+=============================================================================
 Start Hero SEction
-====================================================
+=============================================================================
 */
+/*==== Dark Banner & Light Banner Common Style ====*/
 .hero-section {
-  background: no-repeat top / cover;
   min-height: 100vh;
   padding: 280px 0 51px;
+  @media (max-width: 991px) {
+    padding-top: 200px;
+  }
+  @media (max-width: 575px) {
+    padding-top: 135px;
+  }
   .hero-wrapper {
     max-width: 1114px;
     .hero-text {
@@ -19,8 +25,10 @@ Start Hero SEction
           text-decoration: underline;
         }
       }
-      .hero-desc1 {
-        color: #464646;
+      @media (max-width: 575px) {
+        .hero-desc {
+          margin: 22px 0 19px;
+        }
       }
       .hero-btn {
         max-width: 253px;
@@ -31,9 +39,6 @@ Start Hero SEction
           padding-left: 30px;
           padding-right: 30px;
         }
-      }
-      .hero-btn2:hover {
-        color: $secondary-color;
       }
       @media (max-width: 991px) {
         max-width: 550px;
@@ -90,15 +95,9 @@ Start Hero SEction
       }
     }
   }
-  @media (max-width: 991px) {
-    padding-top: 200px;
-  }
-  @media (max-width: 575px) {
-    padding-top: 150px;
-  }
 }
 
-/*===== Hero Dark Banner ======*/
+/*===== Hero Dark Banner Style ======*/
 .hero-dark-bg {
   position: relative;
   z-index: 1;
@@ -107,6 +106,7 @@ Start Hero SEction
     #4a9ac4 8.72%,
     rgba(255, 255, 255, 0.42) 100%
   ) !important;
+  padding-bottom: 0px;
   .shape {
     position: absolute;
     width: 869.98px;
@@ -132,9 +132,56 @@ Start Hero SEction
       display: none;
     }
   }
+  .hero-dark-banner-text {
+    .hero-dark-banner-desc {
+      color: #464646;
+    }
+  }
+  @media (max-width: 991px) {
+    .hero-dark-banner-img {
+      .hero-dark-banner-main-img {
+        box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -38px;
+        margin-bottom: 5px;
+      }
+    }
+  }
+}
+
+/*===== Hero Light Banner Style ======*/
+.hero-light-bg {
+  background: no-repeat top / cover;
+  .hero-light-banner-text {
+    .hero-light-banner-btn:hover {
+      color: $secondary-color;
+    }
+  }
+  .hero-light-banner-img {
+    max-width: 335px;
+    margin: 40px auto 36px !important;
+    position: relative;
+    z-index: 1;
+    .hero-light-banner-top-shape {
+      position: absolute;
+      top: -20px;
+      right: -20px;
+      z-index: -1;
+      @media (max-width: 370px) {
+        height: 100px;
+      }
+    }
+    .hero-light-banner-bottom-shape {
+      position: absolute;
+      bottom: -20px;
+      left: -20px;
+      z-index: -1;
+      @media (max-width: 370px) {
+        height: 100px;
+      }
+    }
+  }
 }
 /* 
-====================================================
+=============================================================================
 End Hero SEction
-====================================================
+=============================================================================
 */
